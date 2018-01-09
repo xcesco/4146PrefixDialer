@@ -1,0 +1,111 @@
+apply plugin: 'com.android.application'
+
+android {
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        androidTest {
+            //resources.srcDirs += ['../schemas']
+            resources.srcDirs += ['./src/androidTest/res']
+        }
+    }
+
+
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.abubusoft.xeno"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 110
+        versionName "1.1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [eventBusIndex: "com.abubusoft.xeno.XenoEventBusIndex"]
+            }
+        }
+    }
+    signingConfigs {
+        config {
+            keyAlias System.getenv("GRADLE_KEYSTORE_ALIAS")
+            keyPassword System.getenv("GRADLE_KEYSTORE_ALIAS_PASSWORD")
+            storeFile file(System.getenv("GRADLE_KEYSTORE_FILE"))
+            storePassword System.getenv("GRADLE_KEYSTORE_PASSWORD")
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.config
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), System.getenv("GRADLE_PROGUARD_CONFIG_FILE")
+            zipAlignEnabled true
+            proguardFile 'proguard-rules.pro'
+
+            applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    def newName = output.outputFile.getName()
+                    newName = newName.replace("app", defaultConfig.applicationId + "-" + defaultConfig.versionName)
+                    outputFileName = new File(newName)
+                }
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE' // will not include NOTICE file
+        exclude 'META-INF/LICENSE' // will not include LICENSE file
+    }
+}
+
+def kriptonVersion = "3.2.0"
+def permissionDispatcherVersion = "2.3.1"
+def libPhoneNumberVersion = "8.3.0"
+def butterKnifeVersion = "8.8.1"
+def eventBusVersion = "3.0.0"
+def supportVersion = "26.1.0"
+
+dependencies {
+    annotationProcessor "com.abubusoft:kripton-processor:${kriptonVersion}"
+    annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:${permissionDispatcherVersion}"
+    annotationProcessor "org.greenrobot:eventbus-annotation-processor:${eventBusVersion}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${butterKnifeVersion}"
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.abubusoft:kripton-android-library:${kriptonVersion}"
+    implementation "com.github.hotchemi:permissionsdispatcher:${permissionDispatcherVersion}"
+    implementation "com.googlecode.libphonenumber:libphonenumber:${libPhoneNumberVersion}"
+    implementation "com.jakewharton:butterknife:${butterKnifeVersion}"
+    implementation "org.greenrobot:eventbus:${eventBusVersion}"
+    //noinspection GradleCompatible
+    implementation "com.android.support:design:$supportVersion"
+    implementation "com.android.support:appcompat-v7:$supportVersion"
+    implementation "com.android.support:support-v4:$supportVersion"
+    implementation "com.android.support:recyclerview-v7:$supportVersion"
+    implementation "com.android.support:support-v4:$supportVersion"
+    implementation "com.android.support:support-vector-drawable:$supportVersion"
+    implementation 'com.afollestad.material-dialogs:core:0.9.3.0'
+    implementation "com.android.support:support-v4:$supportVersion"
+    implementation "com.android.support:support-vector-drawable:$supportVersion"
+
+    testImplementation 'junit:junit:4.12'
+
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    androidTestImplementation("com.abubusoft:kripton-sqlite-test-library:${kriptonVersion}")
+
+}
+
+
+
