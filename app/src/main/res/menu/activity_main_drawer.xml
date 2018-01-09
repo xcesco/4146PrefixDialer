@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_contacts_list"
+
+            android:title="@string/title_section_contacts_list" />
+
+        <item
+            android:id="@+id/nav_configuration"
+
+            android:title="@string/title_section_settings" />
+
+        <item
+            android:id="@+id/nav_settings"
+
+            android:title="@string/title_section_settings" />
+    </group>
+
+    <item android:title="Information">
+        <menu>
+            <item
+                android:id="@+id/nav_rate_me"
+
+                android:title="@string/title_section_rate_me" />
+            <item
+                android:id="@+id/nav_privacy_policy"
+
+                android:title="@string/title_section_privacy" />
+        </menu>
+    </item>
+
+</menu>

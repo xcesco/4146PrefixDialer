@@ -1,0 +1,6441 @@
+[{
+	"area": 180,
+	"callingCode": "297",
+	"code": "AW",
+	"name": "Aruba",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Aruba"
+	},
+	{
+		"key": "DE",
+		"value": "Aruba"
+	},
+	{
+		"key": "IT",
+		"value": "Aruba"
+	},
+	{
+		"key": "RU",
+		"value": "Аруба"
+	},
+	{
+		"key": "ES",
+		"value": "Aruba"
+	}]
+},
+{
+	"area": 652230,
+	"callingCode": "93",
+	"code": "AF",
+	"name": "Afghanistan",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Afghanistan"
+	},
+	{
+		"key": "DE",
+		"value": "Afghanistan"
+	},
+	{
+		"key": "IT",
+		"value": "Afghanistan"
+	},
+	{
+		"key": "RU",
+		"value": "Афганистан"
+	},
+	{
+		"key": "ES",
+		"value": "Afganistán"
+	}]
+},
+{
+	"area": 1246700,
+	"callingCode": "244",
+	"code": "AO",
+	"name": "Angola",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Angola"
+	},
+	{
+		"key": "DE",
+		"value": "Angola"
+	},
+	{
+		"key": "IT",
+		"value": "Angola"
+	},
+	{
+		"key": "RU",
+		"value": "Ангола"
+	},
+	{
+		"key": "ES",
+		"value": "Angola"
+	}]
+},
+{
+	"area": 91,
+	"callingCode": "1264",
+	"code": "AI",
+	"name": "Anguilla",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Anguilla"
+	},
+	{
+		"key": "DE",
+		"value": "Anguilla"
+	},
+	{
+		"key": "IT",
+		"value": "Anguilla"
+	},
+	{
+		"key": "RU",
+		"value": "Ангилья"
+	},
+	{
+		"key": "ES",
+		"value": "Anguilla"
+	}]
+},
+{
+	"area": 1580,
+	"callingCode": "358",
+	"code": "AX",
+	"name": "Åland Islands",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Ahvenanmaa"
+	},
+	{
+		"key": "DE",
+		"value": "Åland"
+	},
+	{
+		"key": "IT",
+		"value": "Isole Aland"
+	},
+	{
+		"key": "RU",
+		"value": "Аландские острова"
+	},
+	{
+		"key": "ES",
+		"value": "Alandia"
+	}]
+},
+{
+	"area": 28748,
+	"callingCode": "355",
+	"code": "AL",
+	"name": "Albania",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Albanie"
+	},
+	{
+		"key": "DE",
+		"value": "Albanien"
+	},
+	{
+		"key": "IT",
+		"value": "Albania"
+	},
+	{
+		"key": "RU",
+		"value": "Албания"
+	},
+	{
+		"key": "ES",
+		"value": "Albania"
+	}]
+},
+{
+	"area": 468,
+	"callingCode": "376",
+	"code": "AD",
+	"name": "Andorra",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Andorre"
+	},
+	{
+		"key": "DE",
+		"value": "Andorra"
+	},
+	{
+		"key": "IT",
+		"value": "Andorra"
+	},
+	{
+		"key": "RU",
+		"value": "Андорра"
+	},
+	{
+		"key": "ES",
+		"value": "Andorra"
+	}]
+},
+{
+	"area": 83600,
+	"callingCode": "971",
+	"code": "AE",
+	"name": "United Arab Emirates",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Émirats arabes unis"
+	},
+	{
+		"key": "DE",
+		"value": "Vereinigte Arabische Emirate"
+	},
+	{
+		"key": "IT",
+		"value": "Emirati Arabi Uniti"
+	},
+	{
+		"key": "RU",
+		"value": "Объединённые Арабские Эмираты"
+	},
+	{
+		"key": "ES",
+		"value": "Emiratos Árabes Unidos"
+	}]
+},
+{
+	"area": 2780400,
+	"callingCode": "54",
+	"code": "AR",
+	"name": "Argentina",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Argentine"
+	},
+	{
+		"key": "DE",
+		"value": "Argentinien"
+	},
+	{
+		"key": "IT",
+		"value": "Argentina"
+	},
+	{
+		"key": "RU",
+		"value": "Аргентина"
+	},
+	{
+		"key": "ES",
+		"value": "Argentina"
+	}]
+},
+{
+	"area": 29743,
+	"callingCode": "374",
+	"code": "AM",
+	"name": "Armenia",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Arménie"
+	},
+	{
+		"key": "DE",
+		"value": "Armenien"
+	},
+	{
+		"key": "IT",
+		"value": "Armenia"
+	},
+	{
+		"key": "RU",
+		"value": "Армения"
+	},
+	{
+		"key": "ES",
+		"value": "Armenia"
+	}]
+},
+{
+	"area": 199,
+	"callingCode": "1684",
+	"code": "AS",
+	"name": "American Samoa",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Samoa américaines"
+	},
+	{
+		"key": "DE",
+		"value": "Amerikanisch-Samoa"
+	},
+	{
+		"key": "IT",
+		"value": "Samoa Americane"
+	},
+	{
+		"key": "RU",
+		"value": "Американское Самоа"
+	},
+	{
+		"key": "ES",
+		"value": "Samoa Americana"
+	}]
+},
+{
+	"area": 442,
+	"callingCode": "1268",
+	"code": "AG",
+	"name": "Antigua and Barbuda",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Antigua-et-Barbuda"
+	},
+	{
+		"key": "DE",
+		"value": "Antigua und Barbuda"
+	},
+	{
+		"key": "IT",
+		"value": "Antigua e Barbuda"
+	},
+	{
+		"key": "RU",
+		"value": "Антигуа и Барбуда"
+	},
+	{
+		"key": "ES",
+		"value": "Antigua y Barbuda"
+	}]
+},
+{
+	"area": 7692024,
+	"callingCode": "61",
+	"code": "AU",
+	"name": "Australia",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Australie"
+	},
+	{
+		"key": "DE",
+		"value": "Australien"
+	},
+	{
+		"key": "IT",
+		"value": "Australia"
+	},
+	{
+		"key": "RU",
+		"value": "Австралия"
+	},
+	{
+		"key": "ES",
+		"value": "Australia"
+	}]
+},
+{
+	"area": 83871,
+	"callingCode": "43",
+	"code": "AT",
+	"name": "Austria",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Autriche"
+	},
+	{
+		"key": "DE",
+		"value": "Österreich"
+	},
+	{
+		"key": "IT",
+		"value": "Austria"
+	},
+	{
+		"key": "RU",
+		"value": "Австрия"
+	},
+	{
+		"key": "ES",
+		"value": "Austria"
+	}]
+},
+{
+	"area": 86600,
+	"callingCode": "994",
+	"code": "AZ",
+	"name": "Azerbaijan",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Azerbaïdjan"
+	},
+	{
+		"key": "DE",
+		"value": "Aserbaidschan"
+	},
+	{
+		"key": "IT",
+		"value": "Azerbaijan"
+	},
+	{
+		"key": "RU",
+		"value": "Азербайджан"
+	},
+	{
+		"key": "ES",
+		"value": "Azerbaiyán"
+	}]
+},
+{
+	"area": 27834,
+	"callingCode": "257",
+	"code": "BI",
+	"name": "Burundi",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Burundi"
+	},
+	{
+		"key": "DE",
+		"value": "Burundi"
+	},
+	{
+		"key": "IT",
+		"value": "Burundi"
+	},
+	{
+		"key": "RU",
+		"value": "Бурунди"
+	},
+	{
+		"key": "ES",
+		"value": "Burundi"
+	}]
+},
+{
+	"area": 30528,
+	"callingCode": "32",
+	"code": "BE",
+	"name": "Belgium",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Belgique"
+	},
+	{
+		"key": "DE",
+		"value": "Belgien"
+	},
+	{
+		"key": "IT",
+		"value": "Belgio"
+	},
+	{
+		"key": "RU",
+		"value": "Бельгия"
+	},
+	{
+		"key": "ES",
+		"value": "Bélgica"
+	}]
+},
+{
+	"area": 112622,
+	"callingCode": "229",
+	"code": "BJ",
+	"name": "Benin",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Bénin"
+	},
+	{
+		"key": "DE",
+		"value": "Benin"
+	},
+	{
+		"key": "IT",
+		"value": "Benin"
+	},
+	{
+		"key": "RU",
+		"value": "Бенин"
+	},
+	{
+		"key": "ES",
+		"value": "Benín"
+	}]
+},
+{
+	"area": 272967,
+	"callingCode": "226",
+	"code": "BF",
+	"name": "Burkina Faso",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Burkina Faso"
+	},
+	{
+		"key": "DE",
+		"value": "Burkina Faso"
+	},
+	{
+		"key": "IT",
+		"value": "Burkina Faso"
+	},
+	{
+		"key": "RU",
+		"value": "Буркина-Фасо"
+	},
+	{
+		"key": "ES",
+		"value": "Burkina Faso"
+	}]
+},
+{
+	"area": 147570,
+	"callingCode": "880",
+	"code": "BD",
+	"name": "Bangladesh",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Bangladesh"
+	},
+	{
+		"key": "DE",
+		"value": "Bangladesch"
+	},
+	{
+		"key": "IT",
+		"value": "Bangladesh"
+	},
+	{
+		"key": "RU",
+		"value": "Бангладеш"
+	},
+	{
+		"key": "ES",
+		"value": "Bangladesh"
+	}]
+},
+{
+	"area": 110879,
+	"callingCode": "359",
+	"code": "BG",
+	"name": "Bulgaria",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Bulgarie"
+	},
+	{
+		"key": "DE",
+		"value": "Bulgarien"
+	},
+	{
+		"key": "IT",
+		"value": "Bulgaria"
+	},
+	{
+		"key": "RU",
+		"value": "Болгария"
+	},
+	{
+		"key": "ES",
+		"value": "Bulgaria"
+	}]
+},
+{
+	"area": 765,
+	"callingCode": "973",
+	"code": "BH",
+	"name": "Bahrain",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Bahreïn"
+	},
+	{
+		"key": "DE",
+		"value": "Bahrain"
+	},
+	{
+		"key": "IT",
+		"value": "Bahrein"
+	},
+	{
+		"key": "RU",
+		"value": "Бахрейн"
+	},
+	{
+		"key": "ES",
+		"value": "Bahrein"
+	}]
+},
+{
+	"area": 13943,
+	"callingCode": "1242",
+	"code": "BS",
+	"name": "Bahamas",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Bahamas"
+	},
+	{
+		"key": "DE",
+		"value": "Bahamas"
+	},
+	{
+		"key": "IT",
+		"value": "Bahamas"
+	},
+	{
+		"key": "RU",
+		"value": "Багамские Острова"
+	},
+	{
+		"key": "ES",
+		"value": "Bahamas"
+	}]
+},
+{
+	"area": 51209,
+	"callingCode": "387",
+	"code": "BA",
+	"name": "Bosnia and Herzegovina",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Bosnie-Herzégovine"
+	},
+	{
+		"key": "DE",
+		"value": "Bosnien und Herzegowina"
+	},
+	{
+		"key": "IT",
+		"value": "Bosnia ed Erzegovina"
+	},
+	{
+		"key": "RU",
+		"value": "Босния и Герцеговина"
+	},
+	{
+		"key": "ES",
+		"value": "Bosnia y Herzegovina"
+	}]
+},
+{
+	"area": 21,
+	"callingCode": "590",
+	"code": "BL",
+	"name": "Saint Barthélemy",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Saint-Barthélemy"
+	},
+	{
+		"key": "DE",
+		"value": "Saint-Barthélemy"
+	},
+	{
+		"key": "IT",
+		"value": "Antille Francesi"
+	},
+	{
+		"key": "RU",
+		"value": "Сен-Бартелеми"
+	},
+	{
+		"key": "ES",
+		"value": "San Bartolomé"
+	}]
+},
+{
+	"area": 207600,
+	"callingCode": "375",
+	"code": "BY",
+	"name": "Belarus",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Biélorussie"
+	},
+	{
+		"key": "DE",
+		"value": "Weißrussland"
+	},
+	{
+		"key": "IT",
+		"value": "Bielorussia"
+	},
+	{
+		"key": "RU",
+		"value": "Беларусь"
+	},
+	{
+		"key": "ES",
+		"value": "Bielorrusia"
+	}]
+},
+{
+	"area": 22966,
+	"callingCode": "501",
+	"code": "BZ",
+	"name": "Belize",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Belize"
+	},
+	{
+		"key": "DE",
+		"value": "Belize"
+	},
+	{
+		"key": "IT",
+		"value": "Belize"
+	},
+	{
+		"key": "RU",
+		"value": "Белиз"
+	},
+	{
+		"key": "ES",
+		"value": "Belice"
+	}]
+},
+{
+	"area": 54,
+	"callingCode": "1441",
+	"code": "BM",
+	"name": "Bermuda",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Bermudes"
+	},
+	{
+		"key": "DE",
+		"value": "Bermuda"
+	},
+	{
+		"key": "IT",
+		"value": "Bermuda"
+	},
+	{
+		"key": "RU",
+		"value": "Бермудские Острова"
+	},
+	{
+		"key": "ES",
+		"value": "Bermudas"
+	}]
+},
+{
+	"area": 1098581,
+	"callingCode": "591",
+	"code": "BO",
+	"name": "Bolivia",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Bolivie"
+	},
+	{
+		"key": "DE",
+		"value": "Bolivien"
+	},
+	{
+		"key": "IT",
+		"value": "Bolivia"
+	},
+	{
+		"key": "RU",
+		"value": "Боливия"
+	},
+	{
+		"key": "ES",
+		"value": "Bolivia"
+	}]
+},
+{
+	"area": 8515767,
+	"callingCode": "55",
+	"code": "BR",
+	"name": "Brazil",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Brésil"
+	},
+	{
+		"key": "DE",
+		"value": "Brasilien"
+	},
+	{
+		"key": "IT",
+		"value": "Brasile"
+	},
+	{
+		"key": "RU",
+		"value": "Бразилия"
+	},
+	{
+		"key": "ES",
+		"value": "Brasil"
+	}]
+},
+{
+	"area": 430,
+	"callingCode": "1246",
+	"code": "BB",
+	"name": "Barbados",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Barbade"
+	},
+	{
+		"key": "DE",
+		"value": "Barbados"
+	},
+	{
+		"key": "IT",
+		"value": "Barbados"
+	},
+	{
+		"key": "RU",
+		"value": "Барбадос"
+	},
+	{
+		"key": "ES",
+		"value": "Barbados"
+	}]
+},
+{
+	"area": 5765,
+	"callingCode": "673",
+	"code": "BN",
+	"name": "Brunei",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Brunei"
+	},
+	{
+		"key": "DE",
+		"value": "Brunei"
+	},
+	{
+		"key": "IT",
+		"value": "Brunei"
+	},
+	{
+		"key": "RU",
+		"value": "Бруней"
+	},
+	{
+		"key": "ES",
+		"value": "Brunei"
+	}]
+},
+{
+	"area": 38394,
+	"callingCode": "975",
+	"code": "BT",
+	"name": "Bhutan",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Bhoutan"
+	},
+	{
+		"key": "DE",
+		"value": "Bhutan"
+	},
+	{
+		"key": "IT",
+		"value": "Bhutan"
+	},
+	{
+		"key": "RU",
+		"value": "Бутан"
+	},
+	{
+		"key": "ES",
+		"value": "Bután"
+	}]
+},
+{
+	"area": 582000,
+	"callingCode": "267",
+	"code": "BW",
+	"name": "Botswana",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Botswana"
+	},
+	{
+		"key": "DE",
+		"value": "Botswana"
+	},
+	{
+		"key": "IT",
+		"value": "Botswana"
+	},
+	{
+		"key": "RU",
+		"value": "Ботсвана"
+	},
+	{
+		"key": "ES",
+		"value": "Botswana"
+	}]
+},
+{
+	"area": 622984,
+	"callingCode": "236",
+	"code": "CF",
+	"name": "Central African Republic",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "République centrafricaine"
+	},
+	{
+		"key": "DE",
+		"value": "Zentralafrikanische Republik"
+	},
+	{
+		"key": "IT",
+		"value": "Repubblica Centrafricana"
+	},
+	{
+		"key": "RU",
+		"value": "Центральноафриканская Республика"
+	},
+	{
+		"key": "ES",
+		"value": "República Centroafricana"
+	}]
+},
+{
+	"area": 9984670,
+	"callingCode": "1",
+	"code": "CA",
+	"name": "Canada",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Canada"
+	},
+	{
+		"key": "DE",
+		"value": "Kanada"
+	},
+	{
+		"key": "IT",
+		"value": "Canada"
+	},
+	{
+		"key": "RU",
+		"value": "Канада"
+	},
+	{
+		"key": "ES",
+		"value": "Canadá"
+	}]
+},
+{
+	"area": 14,
+	"callingCode": "61",
+	"code": "CC",
+	"name": "Cocos (Keeling) Islands",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Îles Cocos"
+	},
+	{
+		"key": "DE",
+		"value": "Kokosinseln"
+	},
+	{
+		"key": "IT",
+		"value": "Isole Cocos e Keeling"
+	},
+	{
+		"key": "RU",
+		"value": "Кокосовые острова"
+	},
+	{
+		"key": "ES",
+		"value": "Islas Cocos o Islas Keeling"
+	}]
+},
+{
+	"area": 41284,
+	"callingCode": "41",
+	"code": "CH",
+	"name": "Switzerland",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Suisse"
+	},
+	{
+		"key": "DE",
+		"value": "Schweiz"
+	},
+	{
+		"key": "IT",
+		"value": "Svizzera"
+	},
+	{
+		"key": "RU",
+		"value": "Швейцария"
+	},
+	{
+		"key": "ES",
+		"value": "Suiza"
+	}]
+},
+{
+	"area": 756102,
+	"callingCode": "56",
+	"code": "CL",
+	"name": "Chile",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Chili"
+	},
+	{
+		"key": "DE",
+		"value": "Chile"
+	},
+	{
+		"key": "IT",
+		"value": "Cile"
+	},
+	{
+		"key": "RU",
+		"value": "Чили"
+	},
+	{
+		"key": "ES",
+		"value": "Chile"
+	}]
+},
+{
+	"area": 9706961,
+	"callingCode": "86",
+	"code": "CN",
+	"name": "China",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Chine"
+	},
+	{
+		"key": "DE",
+		"value": "China"
+	},
+	{
+		"key": "IT",
+		"value": "Cina"
+	},
+	{
+		"key": "RU",
+		"value": "Китай"
+	},
+	{
+		"key": "ES",
+		"value": "China"
+	}]
+},
+{
+	"area": 322463,
+	"callingCode": "225",
+	"code": "CI",
+	"name": "Ivory Coast",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Côte d'Ivoire"
+	},
+	{
+		"key": "DE",
+		"value": "Elfenbeinküste"
+	},
+	{
+		"key": "IT",
+		"value": "Costa d'Avorio"
+	},
+	{
+		"key": "RU",
+		"value": "Кот-д’Ивуар"
+	},
+	{
+		"key": "ES",
+		"value": "Costa de Marfil"
+	}]
+},
+{
+	"area": 475442,
+	"callingCode": "237",
+	"code": "CM",
+	"name": "Cameroon",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Cameroun"
+	},
+	{
+		"key": "DE",
+		"value": "Kamerun"
+	},
+	{
+		"key": "IT",
+		"value": "Camerun"
+	},
+	{
+		"key": "RU",
+		"value": "Камерун"
+	},
+	{
+		"key": "ES",
+		"value": "Camerún"
+	}]
+},
+{
+	"area": 2344858,
+	"callingCode": "243",
+	"code": "CD",
+	"name": "DR Congo",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Congo (Rép. dém.)"
+	},
+	{
+		"key": "DE",
+		"value": "Kongo (Dem. Rep.)"
+	},
+	{
+		"key": "IT",
+		"value": "Congo (Rep. Dem.)"
+	},
+	{
+		"key": "RU",
+		"value": "Демократическая Республика Конго"
+	},
+	{
+		"key": "ES",
+		"value": "Congo (Rep. Dem.)"
+	}]
+},
+{
+	"area": 342000,
+	"callingCode": "242",
+	"code": "CG",
+	"name": "Republic of the Congo",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Congo"
+	},
+	{
+		"key": "DE",
+		"value": "Kongo"
+	},
+	{
+		"key": "IT",
+		"value": "Congo"
+	},
+	{
+		"key": "RU",
+		"value": "Республика Конго"
+	},
+	{
+		"key": "ES",
+		"value": "Congo"
+	}]
+},
+{
+	"area": 236,
+	"callingCode": "682",
+	"code": "CK",
+	"name": "Cook Islands",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Îles Cook"
+	},
+	{
+		"key": "DE",
+		"value": "Cookinseln"
+	},
+	{
+		"key": "IT",
+		"value": "Isole Cook"
+	},
+	{
+		"key": "RU",
+		"value": "Острова Кука"
+	},
+	{
+		"key": "ES",
+		"value": "Islas Cook"
+	}]
+},
+{
+	"area": 1141748,
+	"callingCode": "57",
+	"code": "CO",
+	"name": "Colombia",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Colombie"
+	},
+	{
+		"key": "DE",
+		"value": "Kolumbien"
+	},
+	{
+		"key": "IT",
+		"value": "Colombia"
+	},
+	{
+		"key": "RU",
+		"value": "Колумбия"
+	},
+	{
+		"key": "ES",
+		"value": "Colombia"
+	}]
+},
+{
+	"area": 1862,
+	"callingCode": "269",
+	"code": "KM",
+	"name": "Comoros",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Comores"
+	},
+	{
+		"key": "DE",
+		"value": "Union der Komoren"
+	},
+	{
+		"key": "IT",
+		"value": "Comore"
+	},
+	{
+		"key": "RU",
+		"value": "Коморы"
+	},
+	{
+		"key": "ES",
+		"value": "Comoras"
+	}]
+},
+{
+	"area": 4033,
+	"callingCode": "238",
+	"code": "CV",
+	"name": "Cape Verde",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Îles du Cap-Vert"
+	},
+	{
+		"key": "DE",
+		"value": "Kap Verde"
+	},
+	{
+		"key": "IT",
+		"value": "Capo Verde"
+	},
+	{
+		"key": "RU",
+		"value": "Кабо-Верде"
+	},
+	{
+		"key": "ES",
+		"value": "Cabo Verde"
+	}]
+},
+{
+	"area": 51100,
+	"callingCode": "506",
+	"code": "CR",
+	"name": "Costa Rica",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Costa Rica"
+	},
+	{
+		"key": "DE",
+		"value": "Costa Rica"
+	},
+	{
+		"key": "IT",
+		"value": "Costa Rica"
+	},
+	{
+		"key": "RU",
+		"value": "Коста-Рика"
+	},
+	{
+		"key": "ES",
+		"value": "Costa Rica"
+	}]
+},
+{
+	"area": 109884,
+	"callingCode": "53",
+	"code": "CU",
+	"name": "Cuba",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Cuba"
+	},
+	{
+		"key": "DE",
+		"value": "Kuba"
+	},
+	{
+		"key": "IT",
+		"value": "Cuba"
+	},
+	{
+		"key": "RU",
+		"value": "Куба"
+	},
+	{
+		"key": "ES",
+		"value": "Cuba"
+	}]
+},
+{
+	"area": 444,
+	"callingCode": "5999",
+	"code": "CW",
+	"name": "Curaçao",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Curaçao"
+	},
+	{
+		"key": "DE",
+		"value": "Curaçao"
+	},
+	{
+		"key": "RU",
+		"value": "Кюрасао"
+	},
+	{
+		"key": "ES",
+		"value": "Curazao"
+	}]
+},
+{
+	"area": 135,
+	"callingCode": "61",
+	"code": "CX",
+	"name": "Christmas Island",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Île Christmas"
+	},
+	{
+		"key": "DE",
+		"value": "Weihnachtsinsel"
+	},
+	{
+		"key": "IT",
+		"value": "Isola di Natale"
+	},
+	{
+		"key": "RU",
+		"value": "Остров Рождества"
+	},
+	{
+		"key": "ES",
+		"value": "Isla de Navidad"
+	}]
+},
+{
+	"area": 264,
+	"callingCode": "1345",
+	"code": "KY",
+	"name": "Cayman Islands",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Îles Caïmans"
+	},
+	{
+		"key": "DE",
+		"value": "Kaimaninseln"
+	},
+	{
+		"key": "IT",
+		"value": "Isole Cayman"
+	},
+	{
+		"key": "RU",
+		"value": "Каймановы острова"
+	},
+	{
+		"key": "ES",
+		"value": "Islas Caimán"
+	}]
+},
+{
+	"area": 9251,
+	"callingCode": "357",
+	"code": "CY",
+	"name": "Cyprus",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Chypre"
+	},
+	{
+		"key": "DE",
+		"value": "Zypern"
+	},
+	{
+		"key": "IT",
+		"value": "Cipro"
+	},
+	{
+		"key": "RU",
+		"value": "Кипр"
+	},
+	{
+		"key": "ES",
+		"value": "Chipre"
+	}]
+},
+{
+	"area": 78865,
+	"callingCode": "420",
+	"code": "CZ",
+	"name": "Czechia",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Tchéquie"
+	},
+	{
+		"key": "DE",
+		"value": "Tschechien"
+	},
+	{
+		"key": "IT",
+		"value": "Cechia"
+	},
+	{
+		"key": "RU",
+		"value": "Чехия"
+	},
+	{
+		"key": "ES",
+		"value": "Chequia"
+	}]
+},
+{
+	"area": 357114,
+	"callingCode": "49",
+	"code": "DE",
+	"name": "Germany",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Allemagne"
+	},
+	{
+		"key": "DE",
+		"value": "Deutschland"
+	},
+	{
+		"key": "IT",
+		"value": "Germania"
+	},
+	{
+		"key": "RU",
+		"value": "Германия"
+	},
+	{
+		"key": "ES",
+		"value": "Alemania"
+	}]
+},
+{
+	"area": 23200,
+	"callingCode": "253",
+	"code": "DJ",
+	"name": "Djibouti",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Djibouti"
+	},
+	{
+		"key": "DE",
+		"value": "Dschibuti"
+	},
+	{
+		"key": "IT",
+		"value": "Gibuti"
+	},
+	{
+		"key": "RU",
+		"value": "Джибути"
+	},
+	{
+		"key": "ES",
+		"value": "Djibouti"
+	}]
+},
+{
+	"area": 751,
+	"callingCode": "1767",
+	"code": "DM",
+	"name": "Dominica",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Dominique"
+	},
+	{
+		"key": "DE",
+		"value": "Dominica"
+	},
+	{
+		"key": "IT",
+		"value": "Dominica"
+	},
+	{
+		"key": "RU",
+		"value": "Доминика"
+	},
+	{
+		"key": "ES",
+		"value": "Dominica"
+	}]
+},
+{
+	"area": 43094,
+	"callingCode": "45",
+	"code": "DK",
+	"name": "Denmark",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Danemark"
+	},
+	{
+		"key": "DE",
+		"value": "Dänemark"
+	},
+	{
+		"key": "IT",
+		"value": "Danimarca"
+	},
+	{
+		"key": "RU",
+		"value": "Дания"
+	},
+	{
+		"key": "ES",
+		"value": "Dinamarca"
+	}]
+},
+{
+	"area": 2381741,
+	"callingCode": "213",
+	"code": "DZ",
+	"name": "Algeria",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Algérie"
+	},
+	{
+		"key": "DE",
+		"value": "Algerien"
+	},
+	{
+		"key": "IT",
+		"value": "Algeria"
+	},
+	{
+		"key": "RU",
+		"value": "Алжир"
+	},
+	{
+		"key": "ES",
+		"value": "Argelia"
+	}]
+},
+{
+	"area": 276841,
+	"callingCode": "593",
+	"code": "EC",
+	"name": "Ecuador",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Équateur"
+	},
+	{
+		"key": "DE",
+		"value": "Ecuador"
+	},
+	{
+		"key": "IT",
+		"value": "Ecuador"
+	},
+	{
+		"key": "RU",
+		"value": "Эквадор"
+	},
+	{
+		"key": "ES",
+		"value": "Ecuador"
+	}]
+},
+{
+	"area": 1002450,
+	"callingCode": "20",
+	"code": "EG",
+	"name": "Egypt",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Égypte"
+	},
+	{
+		"key": "DE",
+		"value": "Ägypten"
+	},
+	{
+		"key": "IT",
+		"value": "Egitto"
+	},
+	{
+		"key": "RU",
+		"value": "Египет"
+	},
+	{
+		"key": "ES",
+		"value": "Egipto"
+	}]
+},
+{
+	"area": 117600,
+	"callingCode": "291",
+	"code": "ER",
+	"name": "Eritrea",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Érythrée"
+	},
+	{
+		"key": "DE",
+		"value": "Eritrea"
+	},
+	{
+		"key": "IT",
+		"value": "Eritrea"
+	},
+	{
+		"key": "RU",
+		"value": "Эритрея"
+	},
+	{
+		"key": "ES",
+		"value": "Eritrea"
+	}]
+},
+{
+	"area": 266000,
+	"callingCode": "212",
+	"code": "EH",
+	"name": "Western Sahara",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Sahara Occidental"
+	},
+	{
+		"key": "DE",
+		"value": "Westsahara"
+	},
+	{
+		"key": "IT",
+		"value": "Sahara Occidentale"
+	},
+	{
+		"key": "RU",
+		"value": "Западная Сахара"
+	},
+	{
+		"key": "ES",
+		"value": "Sahara Occidental"
+	}]
+},
+{
+	"area": 505992,
+	"callingCode": "34",
+	"code": "ES",
+	"name": "Spain",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Espagne"
+	},
+	{
+		"key": "DE",
+		"value": "Spanien"
+	},
+	{
+		"key": "IT",
+		"value": "Spagna"
+	},
+	{
+		"key": "RU",
+		"value": "Испания"
+	},
+	{
+		"key": "ES",
+		"value": "España"
+	}]
+},
+{
+	"area": 45227,
+	"callingCode": "372",
+	"code": "EE",
+	"name": "Estonia",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Estonie"
+	},
+	{
+		"key": "DE",
+		"value": "Estland"
+	},
+	{
+		"key": "IT",
+		"value": "Estonia"
+	},
+	{
+		"key": "RU",
+		"value": "Эстония"
+	},
+	{
+		"key": "ES",
+		"value": "Estonia"
+	}]
+},
+{
+	"area": 1104300,
+	"callingCode": "251",
+	"code": "ET",
+	"name": "Ethiopia",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Éthiopie"
+	},
+	{
+		"key": "DE",
+		"value": "Äthiopien"
+	},
+	{
+		"key": "IT",
+		"value": "Etiopia"
+	},
+	{
+		"key": "RU",
+		"value": "Эфиопия"
+	},
+	{
+		"key": "ES",
+		"value": "Etiopía"
+	}]
+},
+{
+	"area": 338424,
+	"callingCode": "358",
+	"code": "FI",
+	"name": "Finland",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Finlande"
+	},
+	{
+		"key": "DE",
+		"value": "Finnland"
+	},
+	{
+		"key": "IT",
+		"value": "Finlandia"
+	},
+	{
+		"key": "RU",
+		"value": "Финляндия"
+	},
+	{
+		"key": "ES",
+		"value": "Finlandia"
+	}]
+},
+{
+	"area": 18272,
+	"callingCode": "679",
+	"code": "FJ",
+	"name": "Fiji",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Fidji"
+	},
+	{
+		"key": "DE",
+		"value": "Fidschi"
+	},
+	{
+		"key": "IT",
+		"value": "Figi"
+	},
+	{
+		"key": "RU",
+		"value": "Фиджи"
+	},
+	{
+		"key": "ES",
+		"value": "Fiyi"
+	}]
+},
+{
+	"area": 12173,
+	"callingCode": "500",
+	"code": "FK",
+	"name": "Falkland Islands",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Îles Malouines"
+	},
+	{
+		"key": "DE",
+		"value": "Falklandinseln"
+	},
+	{
+		"key": "IT",
+		"value": "Isole Falkland o Isole Malvine"
+	},
+	{
+		"key": "RU",
+		"value": "Фолклендские острова"
+	},
+	{
+		"key": "ES",
+		"value": "Islas Malvinas"
+	}]
+},
+{
+	"area": 551695,
+	"callingCode": "33",
+	"code": "FR",
+	"name": "France",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "France"
+	},
+	{
+		"key": "DE",
+		"value": "Frankreich"
+	},
+	{
+		"key": "IT",
+		"value": "Francia"
+	},
+	{
+		"key": "RU",
+		"value": "Франция"
+	},
+	{
+		"key": "ES",
+		"value": "Francia"
+	}]
+},
+{
+	"area": 1393,
+	"callingCode": "298",
+	"code": "FO",
+	"name": "Faroe Islands",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Îles Féroé"
+	},
+	{
+		"key": "DE",
+		"value": "Färöer-Inseln"
+	},
+	{
+		"key": "IT",
+		"value": "Isole Far Oer"
+	},
+	{
+		"key": "RU",
+		"value": "Фарерские острова"
+	},
+	{
+		"key": "ES",
+		"value": "Islas Faroe"
+	}]
+},
+{
+	"area": 702,
+	"callingCode": "691",
+	"code": "FM",
+	"name": "Micronesia",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Micronésie"
+	},
+	{
+		"key": "DE",
+		"value": "Mikronesien"
+	},
+	{
+		"key": "IT",
+		"value": "Micronesia"
+	},
+	{
+		"key": "RU",
+		"value": "Федеративные Штаты Микронезии"
+	},
+	{
+		"key": "ES",
+		"value": "Micronesia"
+	}]
+},
+{
+	"area": 267668,
+	"callingCode": "241",
+	"code": "GA",
+	"name": "Gabon",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Gabon"
+	},
+	{
+		"key": "DE",
+		"value": "Gabun"
+	},
+	{
+		"key": "IT",
+		"value": "Gabon"
+	},
+	{
+		"key": "RU",
+		"value": "Габон"
+	},
+	{
+		"key": "ES",
+		"value": "Gabón"
+	}]
+},
+{
+	"area": 242900,
+	"callingCode": "44",
+	"code": "GB",
+	"name": "United Kingdom",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Royaume-Uni"
+	},
+	{
+		"key": "DE",
+		"value": "Vereinigtes Königreich"
+	},
+	{
+		"key": "IT",
+		"value": "Regno Unito"
+	},
+	{
+		"key": "RU",
+		"value": "Великобритания"
+	},
+	{
+		"key": "ES",
+		"value": "Reino Unido"
+	}]
+},
+{
+	"area": 69700,
+	"callingCode": "995",
+	"code": "GE",
+	"name": "Georgia",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Géorgie"
+	},
+	{
+		"key": "DE",
+		"value": "Georgien"
+	},
+	{
+		"key": "IT",
+		"value": "Georgia"
+	},
+	{
+		"key": "RU",
+		"value": "Грузия"
+	},
+	{
+		"key": "ES",
+		"value": "Georgia"
+	}]
+},
+{
+	"area": 78,
+	"callingCode": "44",
+	"code": "GG",
+	"name": "Guernsey",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Guernesey"
+	},
+	{
+		"key": "DE",
+		"value": "Guernsey"
+	},
+	{
+		"key": "IT",
+		"value": "Guernsey"
+	},
+	{
+		"key": "RU",
+		"value": "Гернси"
+	},
+	{
+		"key": "ES",
+		"value": "Guernsey"
+	}]
+},
+{
+	"area": 238533,
+	"callingCode": "233",
+	"code": "GH",
+	"name": "Ghana",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Ghana"
+	},
+	{
+		"key": "DE",
+		"value": "Ghana"
+	},
+	{
+		"key": "IT",
+		"value": "Ghana"
+	},
+	{
+		"key": "RU",
+		"value": "Гана"
+	},
+	{
+		"key": "ES",
+		"value": "Ghana"
+	}]
+},
+{
+	"area": 6,
+	"callingCode": "350",
+	"code": "GI",
+	"name": "Gibraltar",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Gibraltar"
+	},
+	{
+		"key": "DE",
+		"value": "Gibraltar"
+	},
+	{
+		"key": "IT",
+		"value": "Gibilterra"
+	},
+	{
+		"key": "RU",
+		"value": "Гибралтар"
+	},
+	{
+		"key": "ES",
+		"value": "Gibraltar"
+	}]
+},
+{
+	"area": 245857,
+	"callingCode": "224",
+	"code": "GN",
+	"name": "Guinea",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Guinée"
+	},
+	{
+		"key": "DE",
+		"value": "Guinea"
+	},
+	{
+		"key": "IT",
+		"value": "Guinea"
+	},
+	{
+		"key": "RU",
+		"value": "Гвинея"
+	},
+	{
+		"key": "ES",
+		"value": "Guinea"
+	}]
+},
+{
+	"area": 1628,
+	"callingCode": "590",
+	"code": "GP",
+	"name": "Guadeloupe",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Guadeloupe"
+	},
+	{
+		"key": "DE",
+		"value": "Guadeloupe"
+	},
+	{
+		"key": "IT",
+		"value": "Guadeloupa"
+	},
+	{
+		"key": "RU",
+		"value": "Гваделупа"
+	},
+	{
+		"key": "ES",
+		"value": "Guadalupe"
+	}]
+},
+{
+	"area": 10689,
+	"callingCode": "220",
+	"code": "GM",
+	"name": "Gambia",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Gambie"
+	},
+	{
+		"key": "DE",
+		"value": "Gambia"
+	},
+	{
+		"key": "IT",
+		"value": "Gambia"
+	},
+	{
+		"key": "RU",
+		"value": "Гамбия"
+	},
+	{
+		"key": "ES",
+		"value": "Gambia"
+	}]
+},
+{
+	"area": 36125,
+	"callingCode": "245",
+	"code": "GW",
+	"name": "Guinea-Bissau",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Guinée-Bissau"
+	},
+	{
+		"key": "DE",
+		"value": "Guinea-Bissau"
+	},
+	{
+		"key": "IT",
+		"value": "Guinea-Bissau"
+	},
+	{
+		"key": "RU",
+		"value": "Гвинея-Бисау"
+	},
+	{
+		"key": "ES",
+		"value": "Guinea-Bisáu"
+	}]
+},
+{
+	"area": 28051,
+	"callingCode": "240",
+	"code": "GQ",
+	"name": "Equatorial Guinea",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Guinée équatoriale"
+	},
+	{
+		"key": "DE",
+		"value": "Äquatorialguinea"
+	},
+	{
+		"key": "IT",
+		"value": "Guinea Equatoriale"
+	},
+	{
+		"key": "RU",
+		"value": "Экваториальная Гвинея"
+	},
+	{
+		"key": "ES",
+		"value": "Guinea Ecuatorial"
+	}]
+},
+{
+	"area": 131990,
+	"callingCode": "30",
+	"code": "GR",
+	"name": "Greece",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Grèce"
+	},
+	{
+		"key": "DE",
+		"value": "Griechenland"
+	},
+	{
+		"key": "IT",
+		"value": "Grecia"
+	},
+	{
+		"key": "RU",
+		"value": "Греция"
+	},
+	{
+		"key": "ES",
+		"value": "Grecia"
+	}]
+},
+{
+	"area": 344,
+	"callingCode": "1473",
+	"code": "GD",
+	"name": "Grenada",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Grenade"
+	},
+	{
+		"key": "DE",
+		"value": "Grenada"
+	},
+	{
+		"key": "IT",
+		"value": "Grenada"
+	},
+	{
+		"key": "RU",
+		"value": "Гренада"
+	},
+	{
+		"key": "ES",
+		"value": "Grenada"
+	}]
+},
+{
+	"area": 2166086,
+	"callingCode": "299",
+	"code": "GL",
+	"name": "Greenland",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Groenland"
+	},
+	{
+		"key": "DE",
+		"value": "Grönland"
+	},
+	{
+		"key": "IT",
+		"value": "Groenlandia"
+	},
+	{
+		"key": "RU",
+		"value": "Гренландия"
+	},
+	{
+		"key": "ES",
+		"value": "Groenlandia"
+	}]
+},
+{
+	"area": 108889,
+	"callingCode": "502",
+	"code": "GT",
+	"name": "Guatemala",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Guatemala"
+	},
+	{
+		"key": "DE",
+		"value": "Guatemala"
+	},
+	{
+		"key": "IT",
+		"value": "Guatemala"
+	},
+	{
+		"key": "RU",
+		"value": "Гватемала"
+	},
+	{
+		"key": "ES",
+		"value": "Guatemala"
+	}]
+},
+{
+	"area": 83534,
+	"callingCode": "594",
+	"code": "GF",
+	"name": "French Guiana",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Guyane"
+	},
+	{
+		"key": "DE",
+		"value": "Französisch Guyana"
+	},
+	{
+		"key": "IT",
+		"value": "Guyana francese"
+	},
+	{
+		"key": "RU",
+		"value": "Французская Гвиана"
+	},
+	{
+		"key": "ES",
+		"value": "Guayana Francesa"
+	}]
+},
+{
+	"area": 549,
+	"callingCode": "1671",
+	"code": "GU",
+	"name": "Guam",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Guam"
+	},
+	{
+		"key": "DE",
+		"value": "Guam"
+	},
+	{
+		"key": "IT",
+		"value": "Guam"
+	},
+	{
+		"key": "RU",
+		"value": "Гуам"
+	},
+	{
+		"key": "ES",
+		"value": "Guam"
+	}]
+},
+{
+	"area": 214969,
+	"callingCode": "592",
+	"code": "GY",
+	"name": "Guyana",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Guyana"
+	},
+	{
+		"key": "DE",
+		"value": "Guyana"
+	},
+	{
+		"key": "IT",
+		"value": "Guyana"
+	},
+	{
+		"key": "RU",
+		"value": "Гайана"
+	},
+	{
+		"key": "ES",
+		"value": "Guyana"
+	}]
+},
+{
+	"area": 1104,
+	"callingCode": "852",
+	"code": "HK",
+	"name": "Hong Kong",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Hong Kong"
+	},
+	{
+		"key": "DE",
+		"value": "Hongkong"
+	},
+	{
+		"key": "IT",
+		"value": "Hong Kong"
+	},
+	{
+		"key": "RU",
+		"value": "Гонконг"
+	},
+	{
+		"key": "ES",
+		"value": "Hong Kong"
+	}]
+},
+{
+	"area": 112492,
+	"callingCode": "504",
+	"code": "HN",
+	"name": "Honduras",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Honduras"
+	},
+	{
+		"key": "DE",
+		"value": "Honduras"
+	},
+	{
+		"key": "IT",
+		"value": "Honduras"
+	},
+	{
+		"key": "RU",
+		"value": "Гондурас"
+	},
+	{
+		"key": "ES",
+		"value": "Honduras"
+	}]
+},
+{
+	"area": 56594,
+	"callingCode": "385",
+	"code": "HR",
+	"name": "Croatia",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Croatie"
+	},
+	{
+		"key": "DE",
+		"value": "Kroatien"
+	},
+	{
+		"key": "IT",
+		"value": "Croazia"
+	},
+	{
+		"key": "RU",
+		"value": "Хорватия"
+	},
+	{
+		"key": "ES",
+		"value": "Croacia"
+	}]
+},
+{
+	"area": 27750,
+	"callingCode": "509",
+	"code": "HT",
+	"name": "Haiti",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Haïti"
+	},
+	{
+		"key": "DE",
+		"value": "Haiti"
+	},
+	{
+		"key": "IT",
+		"value": "Haiti"
+	},
+	{
+		"key": "RU",
+		"value": "Гаити"
+	},
+	{
+		"key": "ES",
+		"value": "Haiti"
+	}]
+},
+{
+	"area": 93028,
+	"callingCode": "36",
+	"code": "HU",
+	"name": "Hungary",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Hongrie"
+	},
+	{
+		"key": "DE",
+		"value": "Ungarn"
+	},
+	{
+		"key": "IT",
+		"value": "Ungheria"
+	},
+	{
+		"key": "RU",
+		"value": "Венгрия"
+	},
+	{
+		"key": "ES",
+		"value": "Hungría"
+	}]
+},
+{
+	"area": 1904569,
+	"callingCode": "62",
+	"code": "ID",
+	"name": "Indonesia",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Indonésie"
+	},
+	{
+		"key": "DE",
+		"value": "Indonesien"
+	},
+	{
+		"key": "IT",
+		"value": "Indonesia"
+	},
+	{
+		"key": "RU",
+		"value": "Индонезия"
+	},
+	{
+		"key": "ES",
+		"value": "Indonesia"
+	}]
+},
+{
+	"area": 572,
+	"callingCode": "44",
+	"code": "IM",
+	"name": "Isle of Man",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Île de Man"
+	},
+	{
+		"key": "DE",
+		"value": "Insel Man"
+	},
+	{
+		"key": "IT",
+		"value": "Isola di Man"
+	},
+	{
+		"key": "RU",
+		"value": "Остров Мэн"
+	},
+	{
+		"key": "ES",
+		"value": "Isla de Man"
+	}]
+},
+{
+	"area": 3287590,
+	"callingCode": "91",
+	"code": "IN",
+	"name": "India",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Inde"
+	},
+	{
+		"key": "DE",
+		"value": "Indien"
+	},
+	{
+		"key": "IT",
+		"value": "India"
+	},
+	{
+		"key": "RU",
+		"value": "Индия"
+	},
+	{
+		"key": "ES",
+		"value": "India"
+	}]
+},
+{
+	"area": 60,
+	"callingCode": "246",
+	"code": "IO",
+	"name": "British Indian Ocean Territory",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Territoire britannique de l'océan Indien"
+	},
+	{
+		"key": "DE",
+		"value": "Britisches Territorium im Indischen Ozean"
+	},
+	{
+		"key": "IT",
+		"value": "Territorio britannico dell'oceano indiano"
+	},
+	{
+		"key": "RU",
+		"value": "Британская территория в Индийском океане"
+	},
+	{
+		"key": "ES",
+		"value": "Territorio Británico del Océano Índico"
+	}]
+},
+{
+	"area": 70273,
+	"callingCode": "353",
+	"code": "IE",
+	"name": "Ireland",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Irlande"
+	},
+	{
+		"key": "DE",
+		"value": "Irland"
+	},
+	{
+		"key": "IT",
+		"value": "Irlanda"
+	},
+	{
+		"key": "RU",
+		"value": "Ирландия"
+	},
+	{
+		"key": "ES",
+		"value": "Irlanda"
+	}]
+},
+{
+	"area": 1648195,
+	"callingCode": "98",
+	"code": "IR",
+	"name": "Iran",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Iran"
+	},
+	{
+		"key": "DE",
+		"value": "Iran"
+	},
+	{
+		"key": "IT",
+		"value": "Iran"
+	},
+	{
+		"key": "RU",
+		"value": "Иран"
+	},
+	{
+		"key": "ES",
+		"value": "Iran"
+	}]
+},
+{
+	"area": 438317,
+	"callingCode": "964",
+	"code": "IQ",
+	"name": "Iraq",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Irak"
+	},
+	{
+		"key": "DE",
+		"value": "Irak"
+	},
+	{
+		"key": "IT",
+		"value": "Iraq"
+	},
+	{
+		"key": "RU",
+		"value": "Ирак"
+	},
+	{
+		"key": "ES",
+		"value": "Irak"
+	}]
+},
+{
+	"area": 103000,
+	"callingCode": "354",
+	"code": "IS",
+	"name": "Iceland",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Islande"
+	},
+	{
+		"key": "DE",
+		"value": "Island"
+	},
+	{
+		"key": "IT",
+		"value": "Islanda"
+	},
+	{
+		"key": "RU",
+		"value": "Исландия"
+	},
+	{
+		"key": "ES",
+		"value": "Islandia"
+	}]
+},
+{
+	"area": 20770,
+	"callingCode": "972",
+	"code": "IL",
+	"name": "Israel",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Israël"
+	},
+	{
+		"key": "DE",
+		"value": "Israel"
+	},
+	{
+		"key": "IT",
+		"value": "Israele"
+	},
+	{
+		"key": "RU",
+		"value": "Израиль"
+	},
+	{
+		"key": "ES",
+		"value": "Israel"
+	}]
+},
+{
+	"area": 301336,
+	"callingCode": "39",
+	"code": "IT",
+	"name": "Italy",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Italie"
+	},
+	{
+		"key": "DE",
+		"value": "Italien"
+	},
+	{
+		"key": "IT",
+		"value": "Italia"
+	},
+	{
+		"key": "RU",
+		"value": "Италия"
+	},
+	{
+		"key": "ES",
+		"value": "Italia"
+	}]
+},
+{
+	"area": 10991,
+	"callingCode": "1876",
+	"code": "JM",
+	"name": "Jamaica",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Jamaïque"
+	},
+	{
+		"key": "DE",
+		"value": "Jamaika"
+	},
+	{
+		"key": "IT",
+		"value": "Giamaica"
+	},
+	{
+		"key": "RU",
+		"value": "Ямайка"
+	},
+	{
+		"key": "ES",
+		"value": "Jamaica"
+	}]
+},
+{
+	"area": 116,
+	"callingCode": "44",
+	"code": "JE",
+	"name": "Jersey",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Jersey"
+	},
+	{
+		"key": "DE",
+		"value": "Jersey"
+	},
+	{
+		"key": "IT",
+		"value": "Isola di Jersey"
+	},
+	{
+		"key": "RU",
+		"value": "Джерси"
+	},
+	{
+		"key": "ES",
+		"value": "Jersey"
+	}]
+},
+{
+	"area": 89342,
+	"callingCode": "962",
+	"code": "JO",
+	"name": "Jordan",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Jordanie"
+	},
+	{
+		"key": "DE",
+		"value": "Jordanien"
+	},
+	{
+		"key": "IT",
+		"value": "Giordania"
+	},
+	{
+		"key": "RU",
+		"value": "Иордания"
+	},
+	{
+		"key": "ES",
+		"value": "Jordania"
+	}]
+},
+{
+	"area": 377930,
+	"callingCode": "81",
+	"code": "JP",
+	"name": "Japan",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Japon"
+	},
+	{
+		"key": "DE",
+		"value": "Japan"
+	},
+	{
+		"key": "IT",
+		"value": "Giappone"
+	},
+	{
+		"key": "RU",
+		"value": "Япония"
+	},
+	{
+		"key": "ES",
+		"value": "Japón"
+	}]
+},
+{
+	"area": 580367,
+	"callingCode": "254",
+	"code": "KE",
+	"name": "Kenya",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Kenya"
+	},
+	{
+		"key": "DE",
+		"value": "Kenia"
+	},
+	{
+		"key": "IT",
+		"value": "Kenya"
+	},
+	{
+		"key": "RU",
+		"value": "Кения"
+	},
+	{
+		"key": "ES",
+		"value": "Kenia"
+	}]
+},
+{
+	"area": 199951,
+	"callingCode": "996",
+	"code": "KG",
+	"name": "Kyrgyzstan",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Kirghizistan"
+	},
+	{
+		"key": "DE",
+		"value": "Kirgisistan"
+	},
+	{
+		"key": "IT",
+		"value": "Kirghizistan"
+	},
+	{
+		"key": "RU",
+		"value": "Киргизия"
+	},
+	{
+		"key": "ES",
+		"value": "Kirguizistán"
+	}]
+},
+{
+	"area": 181035,
+	"callingCode": "855",
+	"code": "KH",
+	"name": "Cambodia",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Cambodge"
+	},
+	{
+		"key": "DE",
+		"value": "Kambodscha"
+	},
+	{
+		"key": "IT",
+		"value": "Cambogia"
+	},
+	{
+		"key": "RU",
+		"value": "Камбоджа"
+	},
+	{
+		"key": "ES",
+		"value": "Camboya"
+	}]
+},
+{
+	"area": 811,
+	"callingCode": "686",
+	"code": "KI",
+	"name": "Kiribati",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Kiribati"
+	},
+	{
+		"key": "DE",
+		"value": "Kiribati"
+	},
+	{
+		"key": "IT",
+		"value": "Kiribati"
+	},
+	{
+		"key": "RU",
+		"value": "Кирибати"
+	},
+	{
+		"key": "ES",
+		"value": "Kiribati"
+	}]
+},
+{
+	"area": 261,
+	"callingCode": "1869",
+	"code": "KN",
+	"name": "Saint Kitts and Nevis",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Saint-Christophe-et-Niévès"
+	},
+	{
+		"key": "DE",
+		"value": "Saint Christopher und Nevis"
+	},
+	{
+		"key": "IT",
+		"value": "Saint Kitts e Nevis"
+	},
+	{
+		"key": "RU",
+		"value": "Сент-Китс и Невис"
+	},
+	{
+		"key": "ES",
+		"value": "San Cristóbal y Nieves"
+	}]
+},
+{
+	"area": 100210,
+	"callingCode": "82",
+	"code": "KR",
+	"name": "South Korea",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Corée du Sud"
+	},
+	{
+		"key": "DE",
+		"value": "Südkorea"
+	},
+	{
+		"key": "IT",
+		"value": "Corea del Sud"
+	},
+	{
+		"key": "RU",
+		"value": "Южная Корея"
+	},
+	{
+		"key": "ES",
+		"value": "Corea del Sur"
+	}]
+},
+{
+	"area": 10908,
+	"callingCode": "383",
+	"code": "XK",
+	"name": "Kosovo",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Kosovo"
+	},
+	{
+		"key": "DE",
+		"value": "Kosovo"
+	},
+	{
+		"key": "IT",
+		"value": "Kosovo"
+	},
+	{
+		"key": "RU",
+		"value": "Республика Косово"
+	},
+	{
+		"key": "ES",
+		"value": "Kosovo"
+	}]
+},
+{
+	"area": 17818,
+	"callingCode": "965",
+	"code": "KW",
+	"name": "Kuwait",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Koweït"
+	},
+	{
+		"key": "DE",
+		"value": "Kuwait"
+	},
+	{
+		"key": "IT",
+		"value": "Kuwait"
+	},
+	{
+		"key": "RU",
+		"value": "Кувейт"
+	},
+	{
+		"key": "ES",
+		"value": "Kuwait"
+	}]
+},
+{
+	"area": 236800,
+	"callingCode": "856",
+	"code": "LA",
+	"name": "Laos",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Laos"
+	},
+	{
+		"key": "DE",
+		"value": "Laos"
+	},
+	{
+		"key": "IT",
+		"value": "Laos"
+	},
+	{
+		"key": "RU",
+		"value": "Лаос"
+	},
+	{
+		"key": "ES",
+		"value": "Laos"
+	}]
+},
+{
+	"area": 10452,
+	"callingCode": "961",
+	"code": "LB",
+	"name": "Lebanon",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Liban"
+	},
+	{
+		"key": "DE",
+		"value": "Libanon"
+	},
+	{
+		"key": "IT",
+		"value": "Libano"
+	},
+	{
+		"key": "RU",
+		"value": "Ливан"
+	},
+	{
+		"key": "ES",
+		"value": "Líbano"
+	}]
+},
+{
+	"area": 111369,
+	"callingCode": "231",
+	"code": "LR",
+	"name": "Liberia",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Liberia"
+	},
+	{
+		"key": "DE",
+		"value": "Liberia"
+	},
+	{
+		"key": "IT",
+		"value": "Liberia"
+	},
+	{
+		"key": "RU",
+		"value": "Либерия"
+	},
+	{
+		"key": "ES",
+		"value": "Liberia"
+	}]
+},
+{
+	"area": 1759540,
+	"callingCode": "218",
+	"code": "LY",
+	"name": "Libya",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Libye"
+	},
+	{
+		"key": "DE",
+		"value": "Libyen"
+	},
+	{
+		"key": "IT",
+		"value": "Libia"
+	},
+	{
+		"key": "RU",
+		"value": "Ливия"
+	},
+	{
+		"key": "ES",
+		"value": "Libia"
+	}]
+},
+{
+	"area": 616,
+	"callingCode": "1758",
+	"code": "LC",
+	"name": "Saint Lucia",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Sainte-Lucie"
+	},
+	{
+		"key": "DE",
+		"value": "Saint Lucia"
+	},
+	{
+		"key": "IT",
+		"value": "Santa Lucia"
+	},
+	{
+		"key": "RU",
+		"value": "Сент-Люсия"
+	},
+	{
+		"key": "ES",
+		"value": "Santa Lucía"
+	}]
+},
+{
+	"area": 160,
+	"callingCode": "423",
+	"code": "LI",
+	"name": "Liechtenstein",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Liechtenstein"
+	},
+	{
+		"key": "DE",
+		"value": "Liechtenstein"
+	},
+	{
+		"key": "IT",
+		"value": "Liechtenstein"
+	},
+	{
+		"key": "RU",
+		"value": "Лихтенштейн"
+	},
+	{
+		"key": "ES",
+		"value": "Liechtenstein"
+	}]
+},
+{
+	"area": 65610,
+	"callingCode": "94",
+	"code": "LK",
+	"name": "Sri Lanka",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Sri Lanka"
+	},
+	{
+		"key": "DE",
+		"value": "Sri Lanka"
+	},
+	{
+		"key": "IT",
+		"value": "Sri Lanka"
+	},
+	{
+		"key": "RU",
+		"value": "Шри-Ланка"
+	},
+	{
+		"key": "ES",
+		"value": "Sri Lanka"
+	}]
+},
+{
+	"area": 30355,
+	"callingCode": "266",
+	"code": "LS",
+	"name": "Lesotho",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Lesotho"
+	},
+	{
+		"key": "DE",
+		"value": "Lesotho"
+	},
+	{
+		"key": "IT",
+		"value": "Lesotho"
+	},
+	{
+		"key": "RU",
+		"value": "Лесото"
+	},
+	{
+		"key": "ES",
+		"value": "Lesotho"
+	}]
+},
+{
+	"area": 65300,
+	"callingCode": "370",
+	"code": "LT",
+	"name": "Lithuania",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Lituanie"
+	},
+	{
+		"key": "DE",
+		"value": "Litauen"
+	},
+	{
+		"key": "IT",
+		"value": "Lituania"
+	},
+	{
+		"key": "RU",
+		"value": "Литва"
+	},
+	{
+		"key": "ES",
+		"value": "Lituania"
+	}]
+},
+{
+	"area": 2586,
+	"callingCode": "352",
+	"code": "LU",
+	"name": "Luxembourg",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Luxembourg"
+	},
+	{
+		"key": "DE",
+		"value": "Luxemburg"
+	},
+	{
+		"key": "IT",
+		"value": "Lussemburgo"
+	},
+	{
+		"key": "RU",
+		"value": "Люксембург"
+	},
+	{
+		"key": "ES",
+		"value": "Luxemburgo"
+	}]
+},
+{
+	"area": 64559,
+	"callingCode": "371",
+	"code": "LV",
+	"name": "Latvia",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Lettonie"
+	},
+	{
+		"key": "DE",
+		"value": "Lettland"
+	},
+	{
+		"key": "IT",
+		"value": "Lettonia"
+	},
+	{
+		"key": "RU",
+		"value": "Латвия"
+	},
+	{
+		"key": "ES",
+		"value": "Letonia"
+	}]
+},
+{
+	"area": 30,
+	"callingCode": "853",
+	"code": "MO",
+	"name": "Macau",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Macao"
+	},
+	{
+		"key": "DE",
+		"value": "Macao"
+	},
+	{
+		"key": "IT",
+		"value": "Macao"
+	},
+	{
+		"key": "RU",
+		"value": "Макао"
+	},
+	{
+		"key": "ES",
+		"value": "Macao"
+	}]
+},
+{
+	"area": 53,
+	"callingCode": "590",
+	"code": "MF",
+	"name": "Saint Martin",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Saint-Martin"
+	},
+	{
+		"key": "DE",
+		"value": "Saint Martin"
+	},
+	{
+		"key": "IT",
+		"value": "Saint Martin"
+	},
+	{
+		"key": "RU",
+		"value": "Сен-Мартен"
+	},
+	{
+		"key": "ES",
+		"value": "Saint Martin"
+	}]
+},
+{
+	"area": 446550,
+	"callingCode": "212",
+	"code": "MA",
+	"name": "Morocco",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Maroc"
+	},
+	{
+		"key": "DE",
+		"value": "Marokko"
+	},
+	{
+		"key": "IT",
+		"value": "Marocco"
+	},
+	{
+		"key": "RU",
+		"value": "Марокко"
+	},
+	{
+		"key": "ES",
+		"value": "Marruecos"
+	}]
+},
+{
+	"area": 2,
+	"callingCode": "377",
+	"code": "MC",
+	"name": "Monaco",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Monaco"
+	},
+	{
+		"key": "DE",
+		"value": "Monaco"
+	},
+	{
+		"key": "IT",
+		"value": "Principato di Monaco"
+	},
+	{
+		"key": "RU",
+		"value": "Монако"
+	},
+	{
+		"key": "ES",
+		"value": "Mónaco"
+	}]
+},
+{
+	"area": 33846,
+	"callingCode": "373",
+	"code": "MD",
+	"name": "Moldova",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Moldavie"
+	},
+	{
+		"key": "DE",
+		"value": "Moldawie"
+	},
+	{
+		"key": "IT",
+		"value": "Moldavia"
+	},
+	{
+		"key": "RU",
+		"value": "Молдавия"
+	},
+	{
+		"key": "ES",
+		"value": "Moldavia"
+	}]
+},
+{
+	"area": 587041,
+	"callingCode": "261",
+	"code": "MG",
+	"name": "Madagascar",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Madagascar"
+	},
+	{
+		"key": "DE",
+		"value": "Madagaskar"
+	},
+	{
+		"key": "IT",
+		"value": "Madagascar"
+	},
+	{
+		"key": "RU",
+		"value": "Мадагаскар"
+	},
+	{
+		"key": "ES",
+		"value": "Madagascar"
+	}]
+},
+{
+	"area": 300,
+	"callingCode": "960",
+	"code": "MV",
+	"name": "Maldives",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Maldives"
+	},
+	{
+		"key": "DE",
+		"value": "Malediven"
+	},
+	{
+		"key": "IT",
+		"value": "Maldive"
+	},
+	{
+		"key": "RU",
+		"value": "Мальдивы"
+	}]
+},
+{
+	"area": 1964375,
+	"callingCode": "52",
+	"code": "MX",
+	"name": "Mexico",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Mexique"
+	},
+	{
+		"key": "DE",
+		"value": "Mexiko"
+	},
+	{
+		"key": "IT",
+		"value": "Messico"
+	},
+	{
+		"key": "RU",
+		"value": "Мексика"
+	},
+	{
+		"key": "ES",
+		"value": "México"
+	}]
+},
+{
+	"area": 181,
+	"callingCode": "692",
+	"code": "MH",
+	"name": "Marshall Islands",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Îles Marshall"
+	},
+	{
+		"key": "DE",
+		"value": "Marshallinseln"
+	},
+	{
+		"key": "IT",
+		"value": "Isole Marshall"
+	},
+	{
+		"key": "RU",
+		"value": "Маршалловы Острова"
+	},
+	{
+		"key": "ES",
+		"value": "Islas Marshall"
+	}]
+},
+{
+	"area": 25713,
+	"callingCode": "389",
+	"code": "MK",
+	"name": "Macedonia",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Macédoine"
+	},
+	{
+		"key": "DE",
+		"value": "Mazedonien"
+	},
+	{
+		"key": "IT",
+		"value": "Macedonia"
+	},
+	{
+		"key": "RU",
+		"value": "Республика Македония"
+	},
+	{
+		"key": "ES",
+		"value": "Macedonia"
+	}]
+},
+{
+	"area": 1240192,
+	"callingCode": "223",
+	"code": "ML",
+	"name": "Mali",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Mali"
+	},
+	{
+		"key": "DE",
+		"value": "Mali"
+	},
+	{
+		"key": "IT",
+		"value": "Mali"
+	},
+	{
+		"key": "RU",
+		"value": "Мали"
+	},
+	{
+		"key": "ES",
+		"value": "Mali"
+	}]
+},
+{
+	"area": 316,
+	"callingCode": "356",
+	"code": "MT",
+	"name": "Malta",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Malte"
+	},
+	{
+		"key": "DE",
+		"value": "Malta"
+	},
+	{
+		"key": "IT",
+		"value": "Malta"
+	},
+	{
+		"key": "RU",
+		"value": "Мальта"
+	},
+	{
+		"key": "ES",
+		"value": "Malta"
+	}]
+},
+{
+	"area": 676578,
+	"callingCode": "95",
+	"code": "MM",
+	"name": "Myanmar",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Birmanie"
+	},
+	{
+		"key": "DE",
+		"value": "Myanmar"
+	},
+	{
+		"key": "IT",
+		"value": "Birmania"
+	},
+	{
+		"key": "RU",
+		"value": "Мьянма"
+	},
+	{
+		"key": "ES",
+		"value": "Myanmar"
+	}]
+},
+{
+	"area": 13812,
+	"callingCode": "382",
+	"code": "ME",
+	"name": "Montenegro",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Monténégro"
+	},
+	{
+		"key": "DE",
+		"value": "Montenegro"
+	},
+	{
+		"key": "IT",
+		"value": "Montenegro"
+	},
+	{
+		"key": "RU",
+		"value": "Черногория"
+	},
+	{
+		"key": "ES",
+		"value": "Montenegro"
+	}]
+},
+{
+	"area": 1564110,
+	"callingCode": "976",
+	"code": "MN",
+	"name": "Mongolia",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Mongolie"
+	},
+	{
+		"key": "DE",
+		"value": "Mongolei"
+	},
+	{
+		"key": "IT",
+		"value": "Mongolia"
+	},
+	{
+		"key": "RU",
+		"value": "Монголия"
+	},
+	{
+		"key": "ES",
+		"value": "Mongolia"
+	}]
+},
+{
+	"area": 464,
+	"callingCode": "1670",
+	"code": "MP",
+	"name": "Northern Mariana Islands",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Îles Mariannes du Nord"
+	},
+	{
+		"key": "DE",
+		"value": "Nördliche Marianen"
+	},
+	{
+		"key": "IT",
+		"value": "Isole Marianne Settentrionali"
+	},
+	{
+		"key": "RU",
+		"value": "Северные Марианские острова"
+	},
+	{
+		"key": "ES",
+		"value": "Islas Marianas del Norte"
+	}]
+},
+{
+	"area": 801590,
+	"callingCode": "258",
+	"code": "MZ",
+	"name": "Mozambique",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Mozambique"
+	},
+	{
+		"key": "DE",
+		"value": "Mosambik"
+	},
+	{
+		"key": "IT",
+		"value": "Mozambico"
+	},
+	{
+		"key": "RU",
+		"value": "Мозамбик"
+	},
+	{
+		"key": "ES",
+		"value": "Mozambique"
+	}]
+},
+{
+	"area": 1030700,
+	"callingCode": "222",
+	"code": "MR",
+	"name": "Mauritania",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Mauritanie"
+	},
+	{
+		"key": "DE",
+		"value": "Mauretanien"
+	},
+	{
+		"key": "IT",
+		"value": "Mauritania"
+	},
+	{
+		"key": "RU",
+		"value": "Мавритания"
+	},
+	{
+		"key": "ES",
+		"value": "Mauritania"
+	}]
+},
+{
+	"area": 102,
+	"callingCode": "1664",
+	"code": "MS",
+	"name": "Montserrat",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Montserrat"
+	},
+	{
+		"key": "DE",
+		"value": "Montserrat"
+	},
+	{
+		"key": "IT",
+		"value": "Montserrat"
+	},
+	{
+		"key": "RU",
+		"value": "Монтсеррат"
+	},
+	{
+		"key": "ES",
+		"value": "Montserrat"
+	}]
+},
+{
+	"area": 1128,
+	"callingCode": "596",
+	"code": "MQ",
+	"name": "Martinique",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Martinique"
+	},
+	{
+		"key": "DE",
+		"value": "Martinique"
+	},
+	{
+		"key": "IT",
+		"value": "Martinica"
+	},
+	{
+		"key": "RU",
+		"value": "Мартиника"
+	},
+	{
+		"key": "ES",
+		"value": "Martinica"
+	}]
+},
+{
+	"area": 2040,
+	"callingCode": "230",
+	"code": "MU",
+	"name": "Mauritius",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Île Maurice"
+	},
+	{
+		"key": "DE",
+		"value": "Mauritius"
+	},
+	{
+		"key": "IT",
+		"value": "Mauritius"
+	},
+	{
+		"key": "RU",
+		"value": "Маврикий"
+	},
+	{
+		"key": "ES",
+		"value": "Mauricio"
+	}]
+},
+{
+	"area": 118484,
+	"callingCode": "265",
+	"code": "MW",
+	"name": "Malawi",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Malawi"
+	},
+	{
+		"key": "DE",
+		"value": "Malawi"
+	},
+	{
+		"key": "IT",
+		"value": "Malawi"
+	},
+	{
+		"key": "RU",
+		"value": "Малави"
+	},
+	{
+		"key": "ES",
+		"value": "Malawi"
+	}]
+},
+{
+	"area": 330803,
+	"callingCode": "60",
+	"code": "MY",
+	"name": "Malaysia",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Malaisie"
+	},
+	{
+		"key": "DE",
+		"value": "Malaysia"
+	},
+	{
+		"key": "IT",
+		"value": "Malesia"
+	},
+	{
+		"key": "RU",
+		"value": "Малайзия"
+	},
+	{
+		"key": "ES",
+		"value": "Malasia"
+	}]
+},
+{
+	"area": 374,
+	"callingCode": "262",
+	"code": "YT",
+	"name": "Mayotte",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Mayotte"
+	},
+	{
+		"key": "DE",
+		"value": "Mayotte"
+	},
+	{
+		"key": "IT",
+		"value": "Mayotte"
+	},
+	{
+		"key": "RU",
+		"value": "Майотта"
+	},
+	{
+		"key": "ES",
+		"value": "Mayotte"
+	}]
+},
+{
+	"area": 825615,
+	"callingCode": "264",
+	"code": "NA",
+	"name": "Namibia",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Namibie"
+	},
+	{
+		"key": "DE",
+		"value": "Namibia"
+	},
+	{
+		"key": "IT",
+		"value": "Namibia"
+	},
+	{
+		"key": "RU",
+		"value": "Намибия"
+	},
+	{
+		"key": "ES",
+		"value": "Namibia"
+	}]
+},
+{
+	"area": 18575,
+	"callingCode": "687",
+	"code": "NC",
+	"name": "New Caledonia",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Nouvelle-Calédonie"
+	},
+	{
+		"key": "DE",
+		"value": "Neukaledonien"
+	},
+	{
+		"key": "IT",
+		"value": "Nuova Caledonia"
+	},
+	{
+		"key": "RU",
+		"value": "Новая Каледония"
+	},
+	{
+		"key": "ES",
+		"value": "Nueva Caledonia"
+	}]
+},
+{
+	"area": 1267000,
+	"callingCode": "227",
+	"code": "NE",
+	"name": "Niger",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Niger"
+	},
+	{
+		"key": "DE",
+		"value": "Niger"
+	},
+	{
+		"key": "IT",
+		"value": "Niger"
+	},
+	{
+		"key": "RU",
+		"value": "Нигер"
+	},
+	{
+		"key": "ES",
+		"value": "Níger"
+	}]
+},
+{
+	"area": 36,
+	"callingCode": "672",
+	"code": "NF",
+	"name": "Norfolk Island",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Île Norfolk"
+	},
+	{
+		"key": "DE",
+		"value": "Norfolkinsel"
+	},
+	{
+		"key": "IT",
+		"value": "Isola Norfolk"
+	},
+	{
+		"key": "RU",
+		"value": "Норфолк"
+	},
+	{
+		"key": "ES",
+		"value": "Isla de Norfolk"
+	}]
+},
+{
+	"area": 923768,
+	"callingCode": "234",
+	"code": "NG",
+	"name": "Nigeria",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Nigéria"
+	},
+	{
+		"key": "DE",
+		"value": "Nigeria"
+	},
+	{
+		"key": "IT",
+		"value": "Nigeria"
+	},
+	{
+		"key": "RU",
+		"value": "Нигерия"
+	},
+	{
+		"key": "ES",
+		"value": "Nigeria"
+	}]
+},
+{
+	"area": 130373,
+	"callingCode": "505",
+	"code": "NI",
+	"name": "Nicaragua",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Nicaragua"
+	},
+	{
+		"key": "DE",
+		"value": "Nicaragua"
+	},
+	{
+		"key": "IT",
+		"value": "Nicaragua"
+	},
+	{
+		"key": "RU",
+		"value": "Никарагуа"
+	},
+	{
+		"key": "ES",
+		"value": "Nicaragua"
+	}]
+},
+{
+	"area": 260,
+	"callingCode": "683",
+	"code": "NU",
+	"name": "Niue",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Niue"
+	},
+	{
+		"key": "DE",
+		"value": "Niue"
+	},
+	{
+		"key": "IT",
+		"value": "Niue"
+	},
+	{
+		"key": "RU",
+		"value": "Ниуэ"
+	},
+	{
+		"key": "ES",
+		"value": "Niue"
+	}]
+},
+{
+	"area": 41850,
+	"callingCode": "31",
+	"code": "NL",
+	"name": "Netherlands",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Pays-Bas"
+	},
+	{
+		"key": "DE",
+		"value": "Niederlande"
+	},
+	{
+		"key": "IT",
+		"value": "Paesi Bassi"
+	},
+	{
+		"key": "RU",
+		"value": "Нидерланды"
+	},
+	{
+		"key": "ES",
+		"value": "Países Bajos"
+	}]
+},
+{
+	"area": 323802,
+	"callingCode": "47",
+	"code": "NO",
+	"name": "Norway",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Norvège"
+	},
+	{
+		"key": "DE",
+		"value": "Norwegen"
+	},
+	{
+		"key": "IT",
+		"value": "Norvegia"
+	},
+	{
+		"key": "RU",
+		"value": "Норвегия"
+	},
+	{
+		"key": "ES",
+		"value": "Noruega"
+	}]
+},
+{
+	"area": 147181,
+	"callingCode": "977",
+	"code": "NP",
+	"name": "Nepal",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Népal"
+	},
+	{
+		"key": "DE",
+		"value": "Népal"
+	},
+	{
+		"key": "IT",
+		"value": "Nepal"
+	},
+	{
+		"key": "RU",
+		"value": "Непал"
+	},
+	{
+		"key": "ES",
+		"value": "Nepal"
+	}]
+},
+{
+	"area": 21,
+	"callingCode": "674",
+	"code": "NR",
+	"name": "Nauru",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Nauru"
+	},
+	{
+		"key": "DE",
+		"value": "Nauru"
+	},
+	{
+		"key": "IT",
+		"value": "Nauru"
+	},
+	{
+		"key": "RU",
+		"value": "Науру"
+	},
+	{
+		"key": "ES",
+		"value": "Nauru"
+	}]
+},
+{
+	"area": 270467,
+	"callingCode": "64",
+	"code": "NZ",
+	"name": "New Zealand",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Nouvelle-Zélande"
+	},
+	{
+		"key": "DE",
+		"value": "Neuseeland"
+	},
+	{
+		"key": "IT",
+		"value": "Nuova Zelanda"
+	},
+	{
+		"key": "RU",
+		"value": "Новая Зеландия"
+	},
+	{
+		"key": "ES",
+		"value": "Nueva Zelanda"
+	}]
+},
+{
+	"area": 309500,
+	"callingCode": "968",
+	"code": "OM",
+	"name": "Oman",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Oman"
+	},
+	{
+		"key": "DE",
+		"value": "Oman"
+	},
+	{
+		"key": "IT",
+		"value": "oman"
+	},
+	{
+		"key": "RU",
+		"value": "Оман"
+	},
+	{
+		"key": "ES",
+		"value": "Omán"
+	}]
+},
+{
+	"area": 881912,
+	"callingCode": "92",
+	"code": "PK",
+	"name": "Pakistan",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Pakistan"
+	},
+	{
+		"key": "DE",
+		"value": "Pakistan"
+	},
+	{
+		"key": "IT",
+		"value": "Pakistan"
+	},
+	{
+		"key": "RU",
+		"value": "Пакистан"
+	},
+	{
+		"key": "ES",
+		"value": "Pakistán"
+	}]
+},
+{
+	"area": 75417,
+	"callingCode": "507",
+	"code": "PA",
+	"name": "Panama",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Panama"
+	},
+	{
+		"key": "DE",
+		"value": "Panama"
+	},
+	{
+		"key": "IT",
+		"value": "Panama"
+	},
+	{
+		"key": "RU",
+		"value": "Панама"
+	},
+	{
+		"key": "ES",
+		"value": "Panamá"
+	}]
+},
+{
+	"area": 47,
+	"callingCode": "64",
+	"code": "PN",
+	"name": "Pitcairn Islands",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Îles Pitcairn"
+	},
+	{
+		"key": "DE",
+		"value": "Pitcairn"
+	},
+	{
+		"key": "IT",
+		"value": "Isole Pitcairn"
+	},
+	{
+		"key": "RU",
+		"value": "Острова Питкэрн"
+	},
+	{
+		"key": "ES",
+		"value": "Islas Pitcairn"
+	}]
+},
+{
+	"area": 1285216,
+	"callingCode": "51",
+	"code": "PE",
+	"name": "Peru",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Pérou"
+	},
+	{
+		"key": "DE",
+		"value": "Peru"
+	},
+	{
+		"key": "IT",
+		"value": "Perù"
+	},
+	{
+		"key": "RU",
+		"value": "Перу"
+	},
+	{
+		"key": "ES",
+		"value": "Perú"
+	}]
+},
+{
+	"area": 342353,
+	"callingCode": "63",
+	"code": "PH",
+	"name": "Philippines",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Philippines"
+	},
+	{
+		"key": "DE",
+		"value": "Philippinen"
+	},
+	{
+		"key": "IT",
+		"value": "Filippine"
+	},
+	{
+		"key": "RU",
+		"value": "Филиппины"
+	},
+	{
+		"key": "ES",
+		"value": "Filipinas"
+	}]
+},
+{
+	"area": 459,
+	"callingCode": "680",
+	"code": "PW",
+	"name": "Palau",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Palaos (Palau)"
+	},
+	{
+		"key": "DE",
+		"value": "Palau"
+	},
+	{
+		"key": "IT",
+		"value": "Palau"
+	},
+	{
+		"key": "RU",
+		"value": "Палау"
+	},
+	{
+		"key": "ES",
+		"value": "Palau"
+	}]
+},
+{
+	"area": 462840,
+	"callingCode": "675",
+	"code": "PG",
+	"name": "Papua New Guinea",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Papouasie-Nouvelle-Guinée"
+	},
+	{
+		"key": "DE",
+		"value": "Papua-Neuguinea"
+	},
+	{
+		"key": "IT",
+		"value": "Papua Nuova Guinea"
+	},
+	{
+		"key": "RU",
+		"value": "Папуа — Новая Гвинея"
+	},
+	{
+		"key": "ES",
+		"value": "Papúa Nueva Guinea"
+	}]
+},
+{
+	"area": 312679,
+	"callingCode": "48",
+	"code": "PL",
+	"name": "Poland",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Pologne"
+	},
+	{
+		"key": "DE",
+		"value": "Polen"
+	},
+	{
+		"key": "IT",
+		"value": "Polonia"
+	},
+	{
+		"key": "RU",
+		"value": "Польша"
+	},
+	{
+		"key": "ES",
+		"value": "Polonia"
+	}]
+},
+{
+	"area": 120538,
+	"callingCode": "850",
+	"code": "KP",
+	"name": "North Korea",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Corée du Nord"
+	},
+	{
+		"key": "DE",
+		"value": "Nordkorea"
+	},
+	{
+		"key": "IT",
+		"value": "Corea del Nord"
+	},
+	{
+		"key": "RU",
+		"value": "Северная Корея"
+	},
+	{
+		"key": "ES",
+		"value": "Corea del Norte"
+	}]
+},
+{
+	"area": 92090,
+	"callingCode": "351",
+	"code": "PT",
+	"name": "Portugal",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Portugal"
+	},
+	{
+		"key": "DE",
+		"value": "Portugal"
+	},
+	{
+		"key": "IT",
+		"value": "Portogallo"
+	},
+	{
+		"key": "RU",
+		"value": "Португалия"
+	},
+	{
+		"key": "ES",
+		"value": "Portugal"
+	}]
+},
+{
+	"area": 406752,
+	"callingCode": "595",
+	"code": "PY",
+	"name": "Paraguay",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Paraguay"
+	},
+	{
+		"key": "DE",
+		"value": "Paraguay"
+	},
+	{
+		"key": "IT",
+		"value": "Paraguay"
+	},
+	{
+		"key": "RU",
+		"value": "Парагвай"
+	},
+	{
+		"key": "ES",
+		"value": "Paraguay"
+	}]
+},
+{
+	"area": 6220,
+	"callingCode": "970",
+	"code": "PS",
+	"name": "Palestine",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Palestine"
+	},
+	{
+		"key": "DE",
+		"value": "Palästina"
+	},
+	{
+		"key": "IT",
+		"value": "Palestina"
+	},
+	{
+		"key": "RU",
+		"value": "Палестина"
+	},
+	{
+		"key": "ES",
+		"value": "Palestina"
+	}]
+},
+{
+	"area": 4167,
+	"callingCode": "689",
+	"code": "PF",
+	"name": "French Polynesia",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Polynésie française"
+	},
+	{
+		"key": "DE",
+		"value": "Französisch-Polynesien"
+	},
+	{
+		"key": "IT",
+		"value": "Polinesia Francese"
+	},
+	{
+		"key": "RU",
+		"value": "Французская Полинезия"
+	},
+	{
+		"key": "ES",
+		"value": "Polinesia Francesa"
+	}]
+},
+{
+	"area": 11586,
+	"callingCode": "974",
+	"code": "QA",
+	"name": "Qatar",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Qatar"
+	},
+	{
+		"key": "DE",
+		"value": "Katar"
+	},
+	{
+		"key": "IT",
+		"value": "Qatar"
+	},
+	{
+		"key": "RU",
+		"value": "Катар"
+	},
+	{
+		"key": "ES",
+		"value": "Catar"
+	}]
+},
+{
+	"area": 2511,
+	"callingCode": "262",
+	"code": "RE",
+	"name": "Réunion",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Réunion"
+	},
+	{
+		"key": "DE",
+		"value": "Réunion"
+	},
+	{
+		"key": "IT",
+		"value": "Riunione"
+	},
+	{
+		"key": "RU",
+		"value": "Реюньон"
+	},
+	{
+		"key": "ES",
+		"value": "Reunión"
+	}]
+},
+{
+	"area": 238391,
+	"callingCode": "40",
+	"code": "RO",
+	"name": "Romania",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Roumanie"
+	},
+	{
+		"key": "DE",
+		"value": "Rumänien"
+	},
+	{
+		"key": "IT",
+		"value": "Romania"
+	},
+	{
+		"key": "RU",
+		"value": "Румыния"
+	},
+	{
+		"key": "ES",
+		"value": "Rumania"
+	}]
+},
+{
+	"area": 17098242,
+	"callingCode": "7",
+	"code": "RU",
+	"name": "Russia",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Russie"
+	},
+	{
+		"key": "DE",
+		"value": "Russland"
+	},
+	{
+		"key": "IT",
+		"value": "Russia"
+	},
+	{
+		"key": "RU",
+		"value": "Россия"
+	},
+	{
+		"key": "ES",
+		"value": "Rusia"
+	}]
+},
+{
+	"area": 26338,
+	"callingCode": "250",
+	"code": "RW",
+	"name": "Rwanda",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Rwanda"
+	},
+	{
+		"key": "DE",
+		"value": "Ruanda"
+	},
+	{
+		"key": "IT",
+		"value": "Ruanda"
+	},
+	{
+		"key": "RU",
+		"value": "Руанда"
+	},
+	{
+		"key": "ES",
+		"value": "Ruanda"
+	}]
+},
+{
+	"area": 2149690,
+	"callingCode": "966",
+	"code": "SA",
+	"name": "Saudi Arabia",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Arabie Saoudite"
+	},
+	{
+		"key": "DE",
+		"value": "Saudi-Arabien"
+	},
+	{
+		"key": "IT",
+		"value": "Arabia Saudita"
+	},
+	{
+		"key": "RU",
+		"value": "Саудовская Аравия"
+	},
+	{
+		"key": "ES",
+		"value": "Arabia Saudí"
+	}]
+},
+{
+	"area": 1886068,
+	"callingCode": "249",
+	"code": "SD",
+	"name": "Sudan",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Soudan"
+	},
+	{
+		"key": "DE",
+		"value": "Sudan"
+	},
+	{
+		"key": "IT",
+		"value": "Sudan"
+	},
+	{
+		"key": "RU",
+		"value": "Судан"
+	},
+	{
+		"key": "ES",
+		"value": "Sudán"
+	}]
+},
+{
+	"area": 196722,
+	"callingCode": "221",
+	"code": "SN",
+	"name": "Senegal",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Sénégal"
+	},
+	{
+		"key": "DE",
+		"value": "Senegal"
+	},
+	{
+		"key": "IT",
+		"value": "Senegal"
+	},
+	{
+		"key": "RU",
+		"value": "Сенегал"
+	},
+	{
+		"key": "ES",
+		"value": "Senegal"
+	}]
+},
+{
+	"area": 710,
+	"callingCode": "65",
+	"code": "SG",
+	"name": "Singapore",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Singapour"
+	},
+	{
+		"key": "DE",
+		"value": "Singapur"
+	},
+	{
+		"key": "IT",
+		"value": "Singapore"
+	},
+	{
+		"key": "RU",
+		"value": "Сингапур"
+	},
+	{
+		"key": "ES",
+		"value": "Singapur"
+	}]
+},
+{
+	"area": 3903,
+	"callingCode": "500",
+	"code": "GS",
+	"name": "South Georgia",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Géorgie du Sud-et-les Îles Sandwich du Sud"
+	},
+	{
+		"key": "DE",
+		"value": "Südgeorgien und die Südlichen Sandwichinseln"
+	},
+	{
+		"key": "IT",
+		"value": "Georgia del Sud e Isole Sandwich Meridionali"
+	},
+	{
+		"key": "RU",
+		"value": "Южная Георгия и Южные Сандвичевы острова"
+	},
+	{
+		"key": "ES",
+		"value": "Islas Georgias del Sur y Sandwich del Sur"
+	}]
+},
+{
+	"area": -1,
+	"callingCode": "4779",
+	"code": "SJ",
+	"name": "Svalbard and Jan Mayen",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Svalbard et Jan Mayen"
+	},
+	{
+		"key": "DE",
+		"value": "Spitzbergen"
+	},
+	{
+		"key": "IT",
+		"value": "Svalbard e Jan Mayen"
+	},
+	{
+		"key": "RU",
+		"value": "Шпицберген и Ян-Майен"
+	},
+	{
+		"key": "ES",
+		"value": "Islas Svalbard y Jan Mayen"
+	}]
+},
+{
+	"area": 28896,
+	"callingCode": "677",
+	"code": "SB",
+	"name": "Solomon Islands",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Îles Salomon"
+	},
+	{
+		"key": "DE",
+		"value": "Salomonen"
+	},
+	{
+		"key": "IT",
+		"value": "Isole Salomone"
+	},
+	{
+		"key": "RU",
+		"value": "Соломоновы Острова"
+	},
+	{
+		"key": "ES",
+		"value": "Islas Salomón"
+	}]
+},
+{
+	"area": 71740,
+	"callingCode": "232",
+	"code": "SL",
+	"name": "Sierra Leone",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Sierra Leone"
+	},
+	{
+		"key": "DE",
+		"value": "Sierra Leone"
+	},
+	{
+		"key": "IT",
+		"value": "Sierra Leone"
+	},
+	{
+		"key": "RU",
+		"value": "Сьерра-Леоне"
+	},
+	{
+		"key": "ES",
+		"value": "Sierra Leone"
+	}]
+},
+{
+	"area": 21041,
+	"callingCode": "503",
+	"code": "SV",
+	"name": "El Salvador",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Salvador"
+	},
+	{
+		"key": "DE",
+		"value": "El Salvador"
+	},
+	{
+		"key": "IT",
+		"value": "El Salvador"
+	},
+	{
+		"key": "RU",
+		"value": "Сальвадор"
+	},
+	{
+		"key": "ES",
+		"value": "El Salvador"
+	}]
+},
+{
+	"area": 61,
+	"callingCode": "378",
+	"code": "SM",
+	"name": "San Marino",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Saint-Marin"
+	},
+	{
+		"key": "DE",
+		"value": "San Marino"
+	},
+	{
+		"key": "IT",
+		"value": "San Marino"
+	},
+	{
+		"key": "RU",
+		"value": "Сан-Марино"
+	},
+	{
+		"key": "ES",
+		"value": "San Marino"
+	}]
+},
+{
+	"area": 637657,
+	"callingCode": "252",
+	"code": "SO",
+	"name": "Somalia",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Somalie"
+	},
+	{
+		"key": "DE",
+		"value": "Somalia"
+	},
+	{
+		"key": "IT",
+		"value": "Somalia"
+	},
+	{
+		"key": "RU",
+		"value": "Сомали"
+	},
+	{
+		"key": "ES",
+		"value": "Somalia"
+	}]
+},
+{
+	"area": 242,
+	"callingCode": "508",
+	"code": "PM",
+	"name": "Saint Pierre and Miquelon",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Saint-Pierre-et-Miquelon"
+	},
+	{
+		"key": "DE",
+		"value": "Saint-Pierre und Miquelon"
+	},
+	{
+		"key": "IT",
+		"value": "Saint-Pierre e Miquelon"
+	},
+	{
+		"key": "RU",
+		"value": "Сен-Пьер и Микелон"
+	},
+	{
+		"key": "ES",
+		"value": "San Pedro y Miquelón"
+	}]
+},
+{
+	"area": 88361,
+	"callingCode": "381",
+	"code": "RS",
+	"name": "Serbia",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Serbie"
+	},
+	{
+		"key": "DE",
+		"value": "Serbien"
+	},
+	{
+		"key": "IT",
+		"value": "Serbia"
+	},
+	{
+		"key": "RU",
+		"value": "Сербия"
+	},
+	{
+		"key": "ES",
+		"value": "Serbia"
+	}]
+},
+{
+	"area": 619745,
+	"callingCode": "211",
+	"code": "SS",
+	"name": "South Sudan",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Soudan du Sud"
+	},
+	{
+		"key": "DE",
+		"value": "Südsudan"
+	},
+	{
+		"key": "IT",
+		"value": "Sudan del sud"
+	},
+	{
+		"key": "RU",
+		"value": "Южный Судан"
+	},
+	{
+		"key": "ES",
+		"value": "Sudán del Sur"
+	}]
+},
+{
+	"area": 964,
+	"callingCode": "239",
+	"code": "ST",
+	"name": "São Tomé and Príncipe",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "São Tomé et Príncipe"
+	},
+	{
+		"key": "DE",
+		"value": "São Tomé und Príncipe"
+	},
+	{
+		"key": "IT",
+		"value": "São Tomé e Príncipe"
+	},
+	{
+		"key": "RU",
+		"value": "Сан-Томе и Принсипи"
+	}]
+},
+{
+	"area": 163820,
+	"callingCode": "597",
+	"code": "SR",
+	"name": "Suriname",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Surinam"
+	},
+	{
+		"key": "DE",
+		"value": "Suriname"
+	},
+	{
+		"key": "IT",
+		"value": "Suriname"
+	},
+	{
+		"key": "RU",
+		"value": "Суринам"
+	},
+	{
+		"key": "ES",
+		"value": "Surinam"
+	}]
+},
+{
+	"area": 49037,
+	"callingCode": "421",
+	"code": "SK",
+	"name": "Slovakia",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Slovaquie"
+	},
+	{
+		"key": "DE",
+		"value": "Slowakei"
+	},
+	{
+		"key": "IT",
+		"value": "Slovacchia"
+	},
+	{
+		"key": "RU",
+		"value": "Словакия"
+	},
+	{
+		"key": "ES",
+		"value": "República Eslovaca"
+	}]
+},
+{
+	"area": 20273,
+	"callingCode": "386",
+	"code": "SI",
+	"name": "Slovenia",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Slovénie"
+	},
+	{
+		"key": "DE",
+		"value": "Slowenien"
+	},
+	{
+		"key": "IT",
+		"value": "Slovenia"
+	},
+	{
+		"key": "RU",
+		"value": "Словения"
+	},
+	{
+		"key": "ES",
+		"value": "Eslovenia"
+	}]
+},
+{
+	"area": 450295,
+	"callingCode": "46",
+	"code": "SE",
+	"name": "Sweden",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Suède"
+	},
+	{
+		"key": "DE",
+		"value": "Schweden"
+	},
+	{
+		"key": "IT",
+		"value": "Svezia"
+	},
+	{
+		"key": "RU",
+		"value": "Швеция"
+	},
+	{
+		"key": "ES",
+		"value": "Suecia"
+	}]
+},
+{
+	"area": 17364,
+	"callingCode": "268",
+	"code": "SZ",
+	"name": "Swaziland",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Swaziland"
+	},
+	{
+		"key": "DE",
+		"value": "Swasiland"
+	},
+	{
+		"key": "IT",
+		"value": "Swaziland"
+	},
+	{
+		"key": "RU",
+		"value": "Свазиленд"
+	},
+	{
+		"key": "ES",
+		"value": "Suazilandia"
+	}]
+},
+{
+	"area": 34,
+	"callingCode": "1721",
+	"code": "SX",
+	"name": "Sint Maarten",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Saint-Martin"
+	},
+	{
+		"key": "DE",
+		"value": "Sint Maarten"
+	},
+	{
+		"key": "IT",
+		"value": "Sint Maarten"
+	},
+	{
+		"key": "RU",
+		"value": "Синт-Мартен"
+	},
+	{
+		"key": "ES",
+		"value": "Sint Maarten"
+	}]
+},
+{
+	"area": 452,
+	"callingCode": "248",
+	"code": "SC",
+	"name": "Seychelles",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Seychelles"
+	},
+	{
+		"key": "DE",
+		"value": "Seychellen"
+	},
+	{
+		"key": "IT",
+		"value": "Seychelles"
+	},
+	{
+		"key": "RU",
+		"value": "Сейшельские Острова"
+	},
+	{
+		"key": "ES",
+		"value": "Seychelles"
+	}]
+},
+{
+	"area": 185180,
+	"callingCode": "963",
+	"code": "SY",
+	"name": "Syria",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Syrie"
+	},
+	{
+		"key": "DE",
+		"value": "Syrien"
+	},
+	{
+		"key": "IT",
+		"value": "Siria"
+	},
+	{
+		"key": "RU",
+		"value": "Сирия"
+	},
+	{
+		"key": "ES",
+		"value": "Siria"
+	}]
+},
+{
+	"area": 948,
+	"callingCode": "1649",
+	"code": "TC",
+	"name": "Turks and Caicos Islands",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Îles Turques-et-Caïques"
+	},
+	{
+		"key": "DE",
+		"value": "Turks-und Caicosinseln"
+	},
+	{
+		"key": "IT",
+		"value": "Isole Turks e Caicos"
+	},
+	{
+		"key": "RU",
+		"value": "Теркс и Кайкос"
+	},
+	{
+		"key": "ES",
+		"value": "Islas Turks y Caicos"
+	}]
+},
+{
+	"area": 1284000,
+	"callingCode": "235",
+	"code": "TD",
+	"name": "Chad",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Tchad"
+	},
+	{
+		"key": "DE",
+		"value": "Tschad"
+	},
+	{
+		"key": "IT",
+		"value": "Ciad"
+	},
+	{
+		"key": "RU",
+		"value": "Чад"
+	},
+	{
+		"key": "ES",
+		"value": "Chad"
+	}]
+},
+{
+	"area": 56785,
+	"callingCode": "228",
+	"code": "TG",
+	"name": "Togo",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Togo"
+	},
+	{
+		"key": "DE",
+		"value": "Togo"
+	},
+	{
+		"key": "IT",
+		"value": "Togo"
+	},
+	{
+		"key": "RU",
+		"value": "Того"
+	},
+	{
+		"key": "ES",
+		"value": "Togo"
+	}]
+},
+{
+	"area": 513120,
+	"callingCode": "66",
+	"code": "TH",
+	"name": "Thailand",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Thaïlande"
+	},
+	{
+		"key": "DE",
+		"value": "Thailand"
+	},
+	{
+		"key": "IT",
+		"value": "Tailandia"
+	},
+	{
+		"key": "RU",
+		"value": "Таиланд"
+	},
+	{
+		"key": "ES",
+		"value": "Tailandia"
+	}]
+},
+{
+	"area": 143100,
+	"callingCode": "992",
+	"code": "TJ",
+	"name": "Tajikistan",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Tadjikistan"
+	},
+	{
+		"key": "DE",
+		"value": "Tadschikistan"
+	},
+	{
+		"key": "IT",
+		"value": "Tagikistan"
+	},
+	{
+		"key": "RU",
+		"value": "Таджикистан"
+	},
+	{
+		"key": "ES",
+		"value": "Tayikistán"
+	}]
+},
+{
+	"area": 12,
+	"callingCode": "690",
+	"code": "TK",
+	"name": "Tokelau",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Tokelau"
+	},
+	{
+		"key": "DE",
+		"value": "Tokelau"
+	},
+	{
+		"key": "IT",
+		"value": "Isole Tokelau"
+	},
+	{
+		"key": "RU",
+		"value": "Токелау"
+	},
+	{
+		"key": "ES",
+		"value": "Islas Tokelau"
+	}]
+},
+{
+	"area": 488100,
+	"callingCode": "993",
+	"code": "TM",
+	"name": "Turkmenistan",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Turkménistan"
+	},
+	{
+		"key": "DE",
+		"value": "Turkmenistan"
+	},
+	{
+		"key": "IT",
+		"value": "Turkmenistan"
+	},
+	{
+		"key": "RU",
+		"value": "Туркмения"
+	},
+	{
+		"key": "ES",
+		"value": "Turkmenistán"
+	}]
+},
+{
+	"area": 14874,
+	"callingCode": "670",
+	"code": "TL",
+	"name": "Timor-Leste",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Timor oriental"
+	},
+	{
+		"key": "DE",
+		"value": "Timor-Leste"
+	},
+	{
+		"key": "IT",
+		"value": "Timor Est"
+	},
+	{
+		"key": "RU",
+		"value": "Восточный Тимор"
+	},
+	{
+		"key": "ES",
+		"value": "Timor Oriental"
+	}]
+},
+{
+	"area": 747,
+	"callingCode": "676",
+	"code": "TO",
+	"name": "Tonga",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Tonga"
+	},
+	{
+		"key": "DE",
+		"value": "Tonga"
+	},
+	{
+		"key": "IT",
+		"value": "Tonga"
+	},
+	{
+		"key": "RU",
+		"value": "Тонга"
+	},
+	{
+		"key": "ES",
+		"value": "Tonga"
+	}]
+},
+{
+	"area": 5130,
+	"callingCode": "1868",
+	"code": "TT",
+	"name": "Trinidad and Tobago",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Trinité-et-Tobago"
+	},
+	{
+		"key": "DE",
+		"value": "Trinidad und Tobago"
+	},
+	{
+		"key": "IT",
+		"value": "Trinidad e Tobago"
+	},
+	{
+		"key": "RU",
+		"value": "Тринидад и Тобаго"
+	},
+	{
+		"key": "ES",
+		"value": "Trinidad y Tobago"
+	}]
+},
+{
+	"area": 163610,
+	"callingCode": "216",
+	"code": "TN",
+	"name": "Tunisia",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Tunisie"
+	},
+	{
+		"key": "DE",
+		"value": "Tunesien"
+	},
+	{
+		"key": "IT",
+		"value": "Tunisia"
+	},
+	{
+		"key": "RU",
+		"value": "Тунис"
+	},
+	{
+		"key": "ES",
+		"value": "Túnez"
+	}]
+},
+{
+	"area": 783562,
+	"callingCode": "90",
+	"code": "TR",
+	"name": "Turkey",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Turquie"
+	},
+	{
+		"key": "DE",
+		"value": "Türkei"
+	},
+	{
+		"key": "IT",
+		"value": "Turchia"
+	},
+	{
+		"key": "RU",
+		"value": "Турция"
+	},
+	{
+		"key": "ES",
+		"value": "Turquía"
+	}]
+},
+{
+	"area": 26,
+	"callingCode": "688",
+	"code": "TV",
+	"name": "Tuvalu",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Tuvalu"
+	},
+	{
+		"key": "DE",
+		"value": "Tuvalu"
+	},
+	{
+		"key": "IT",
+		"value": "Tuvalu"
+	},
+	{
+		"key": "RU",
+		"value": "Тувалу"
+	},
+	{
+		"key": "ES",
+		"value": "Tuvalu"
+	}]
+},
+{
+	"area": 36193,
+	"callingCode": "886",
+	"code": "TW",
+	"name": "Taiwan",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Taïwan"
+	},
+	{
+		"key": "DE",
+		"value": "Taiwan"
+	},
+	{
+		"key": "IT",
+		"value": "Taiwan"
+	},
+	{
+		"key": "RU",
+		"value": "Тайвань"
+	},
+	{
+		"key": "ES",
+		"value": "Taiwán"
+	}]
+},
+{
+	"area": 945087,
+	"callingCode": "255",
+	"code": "TZ",
+	"name": "Tanzania",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Tanzanie"
+	},
+	{
+		"key": "DE",
+		"value": "Tansania"
+	},
+	{
+		"key": "IT",
+		"value": "Tanzania"
+	},
+	{
+		"key": "RU",
+		"value": "Танзания"
+	},
+	{
+		"key": "ES",
+		"value": "Tanzania"
+	}]
+},
+{
+	"area": 241550,
+	"callingCode": "256",
+	"code": "UG",
+	"name": "Uganda",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Ouganda"
+	},
+	{
+		"key": "DE",
+		"value": "Uganda"
+	},
+	{
+		"key": "IT",
+		"value": "Uganda"
+	},
+	{
+		"key": "RU",
+		"value": "Уганда"
+	},
+	{
+		"key": "ES",
+		"value": "Uganda"
+	}]
+},
+{
+	"area": 603500,
+	"callingCode": "380",
+	"code": "UA",
+	"name": "Ukraine",
+	"region": "Europe",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Ukraine"
+	},
+	{
+		"key": "DE",
+		"value": "Ukraine"
+	},
+	{
+		"key": "IT",
+		"value": "Ucraina"
+	},
+	{
+		"key": "RU",
+		"value": "Украина"
+	},
+	{
+		"key": "ES",
+		"value": "Ucrania"
+	}]
+},
+{
+	"area": 181034,
+	"callingCode": "598",
+	"code": "UY",
+	"name": "Uruguay",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Uruguay"
+	},
+	{
+		"key": "DE",
+		"value": "Uruguay"
+	},
+	{
+		"key": "IT",
+		"value": "Uruguay"
+	},
+	{
+		"key": "RU",
+		"value": "Уругвай"
+	},
+	{
+		"key": "ES",
+		"value": "Uruguay"
+	}]
+},
+{
+	"area": 9372610,
+	"callingCode": "1",
+	"code": "US",
+	"name": "United States",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "États-Unis"
+	},
+	{
+		"key": "DE",
+		"value": "Vereinigte Staaten von Amerika"
+	},
+	{
+		"key": "IT",
+		"value": "Stati Uniti d'America"
+	},
+	{
+		"key": "RU",
+		"value": "Соединённые Штаты Америки"
+	},
+	{
+		"key": "ES",
+		"value": "Estados Unidos"
+	}]
+},
+{
+	"area": 447400,
+	"callingCode": "998",
+	"code": "UZ",
+	"name": "Uzbekistan",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Ouzbékistan"
+	},
+	{
+		"key": "DE",
+		"value": "Usbekistan"
+	},
+	{
+		"key": "IT",
+		"value": "Uzbekistan"
+	},
+	{
+		"key": "RU",
+		"value": "Узбекистан"
+	},
+	{
+		"key": "ES",
+		"value": "Uzbekistán"
+	}]
+},
+{
+	"area": 389,
+	"callingCode": "1784",
+	"code": "VC",
+	"name": "Saint Vincent and the Grenadines",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Saint-Vincent-et-les-Grenadines"
+	},
+	{
+		"key": "DE",
+		"value": "Saint Vincent und die Grenadinen"
+	},
+	{
+		"key": "IT",
+		"value": "Saint Vincent e Grenadine"
+	},
+	{
+		"key": "RU",
+		"value": "Сент-Винсент и Гренадины"
+	},
+	{
+		"key": "ES",
+		"value": "San Vicente y Granadinas"
+	}]
+},
+{
+	"area": 916445,
+	"callingCode": "58",
+	"code": "VE",
+	"name": "Venezuela",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Venezuela"
+	},
+	{
+		"key": "DE",
+		"value": "Venezuela"
+	},
+	{
+		"key": "IT",
+		"value": "Venezuela"
+	},
+	{
+		"key": "RU",
+		"value": "Венесуэла"
+	},
+	{
+		"key": "ES",
+		"value": "Venezuela"
+	}]
+},
+{
+	"area": 151,
+	"callingCode": "1284",
+	"code": "VG",
+	"name": "British Virgin Islands",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Îles Vierges britanniques"
+	},
+	{
+		"key": "DE",
+		"value": "Britische Jungferninseln"
+	},
+	{
+		"key": "IT",
+		"value": "Isole Vergini Britanniche"
+	},
+	{
+		"key": "RU",
+		"value": "Британские Виргинские острова"
+	},
+	{
+		"key": "ES",
+		"value": "Islas Vírgenes del Reino Unido"
+	}]
+},
+{
+	"area": 347,
+	"callingCode": "1340",
+	"code": "VI",
+	"name": "United States Virgin Islands",
+	"region": "Americas",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Îles Vierges des États-Unis"
+	},
+	{
+		"key": "DE",
+		"value": "Amerikanische Jungferninseln"
+	},
+	{
+		"key": "IT",
+		"value": "Isole Vergini americane"
+	},
+	{
+		"key": "RU",
+		"value": "Виргинские Острова"
+	},
+	{
+		"key": "ES",
+		"value": "Islas Vírgenes de los Estados Unidos"
+	}]
+},
+{
+	"area": 331212,
+	"callingCode": "84",
+	"code": "VN",
+	"name": "Vietnam",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Viêt Nam"
+	},
+	{
+		"key": "DE",
+		"value": "Vietnam"
+	},
+	{
+		"key": "IT",
+		"value": "Vietnam"
+	},
+	{
+		"key": "RU",
+		"value": "Вьетнам"
+	},
+	{
+		"key": "ES",
+		"value": "Vietnam"
+	}]
+},
+{
+	"area": 12189,
+	"callingCode": "678",
+	"code": "VU",
+	"name": "Vanuatu",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Vanuatu"
+	},
+	{
+		"key": "DE",
+		"value": "Vanuatu"
+	},
+	{
+		"key": "IT",
+		"value": "Vanuatu"
+	},
+	{
+		"key": "RU",
+		"value": "Вануату"
+	},
+	{
+		"key": "ES",
+		"value": "Vanuatu"
+	}]
+},
+{
+	"area": 142,
+	"callingCode": "681",
+	"code": "WF",
+	"name": "Wallis and Futuna",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Wallis-et-Futuna"
+	},
+	{
+		"key": "DE",
+		"value": "Wallis und Futuna"
+	},
+	{
+		"key": "IT",
+		"value": "Wallis e Futuna"
+	},
+	{
+		"key": "RU",
+		"value": "Уоллис и Футуна"
+	},
+	{
+		"key": "ES",
+		"value": "Wallis y Futuna"
+	}]
+},
+{
+	"area": 2842,
+	"callingCode": "685",
+	"code": "WS",
+	"name": "Samoa",
+	"region": "Oceania",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Samoa"
+	},
+	{
+		"key": "DE",
+		"value": "Samoa"
+	},
+	{
+		"key": "IT",
+		"value": "Samoa"
+	},
+	{
+		"key": "RU",
+		"value": "Самоа"
+	},
+	{
+		"key": "ES",
+		"value": "Samoa"
+	}]
+},
+{
+	"area": 527968,
+	"callingCode": "967",
+	"code": "YE",
+	"name": "Yemen",
+	"region": "Asia",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Yémen"
+	},
+	{
+		"key": "DE",
+		"value": "Jemen"
+	},
+	{
+		"key": "IT",
+		"value": "Yemen"
+	},
+	{
+		"key": "RU",
+		"value": "Йемен"
+	},
+	{
+		"key": "ES",
+		"value": "Yemen"
+	}]
+},
+{
+	"area": 1221037,
+	"callingCode": "27",
+	"code": "ZA",
+	"name": "South Africa",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Afrique du Sud"
+	},
+	{
+		"key": "DE",
+		"value": "Republik Südafrika"
+	},
+	{
+		"key": "IT",
+		"value": "Sud Africa"
+	},
+	{
+		"key": "RU",
+		"value": "Южно-Африканская Республика"
+	},
+	{
+		"key": "ES",
+		"value": "República de Sudáfrica"
+	}]
+},
+{
+	"area": 752612,
+	"callingCode": "260",
+	"code": "ZM",
+	"name": "Zambia",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Zambie"
+	},
+	{
+		"key": "DE",
+		"value": "Sambia"
+	},
+	{
+		"key": "IT",
+		"value": "Zambia"
+	},
+	{
+		"key": "RU",
+		"value": "Замбия"
+	},
+	{
+		"key": "ES",
+		"value": "Zambia"
+	}]
+},
+{
+	"area": 390757,
+	"callingCode": "263",
+	"code": "ZW",
+	"name": "Zimbabwe",
+	"region": "Africa",
+	"translatedName": [{
+		"key": "FR",
+		"value": "Zimbabwe"
+	},
+	{
+		"key": "DE",
+		"value": "Simbabwe"
+	},
+	{
+		"key": "IT",
+		"value": "Zimbabwe"
+	},
+	{
+		"key": "RU",
+		"value": "Зимбабве"
+	},
+	{
+		"key": "ES",
+		"value": "Zimbabue"
+	}]
+}]

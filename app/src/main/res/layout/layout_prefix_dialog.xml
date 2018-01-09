@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/prefix_dialog_name"
+            style="@style/XenoLabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingEnd="24dp"
+            android:paddingStart="24dp"
+            android:text="Name"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/prefix_dialog_number"
+            style="@style/XenoLabelWhiteStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="123456"
+            android:textSize="36sp"
+
+            android:layout_below="@+id/prefix_dialog_name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            style="@style/XenoLabelStyle"
+            android:id="@+id/prefix_dialog_ask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/prefix_dialog_number"
+            android:paddingEnd="24dp"
+            android:paddingStart="24dp"
+            android:text="@string/prefix_dialog_question"
+            android:textSize="20sp"
+            android:paddingTop="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prefix_dialog_ask"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="36dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/prefix_dialog_counter"
+                style="@style/XenoLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/prefix_countdown_label"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prefix_dialog_call_end"
+        android:visibility="gone"
+        android:text="@string/prefix_dialog_end_call"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/colorGray"
+        android:layout_alignBaseline="@+id/prefix_dialog_prefix_add"
+        android:layout_alignBottom="@+id/prefix_dialog_prefix_add"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/prefix_dialog_prefix_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prefix_dialog_add_prefix"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/colorPrimary"
+        android:textAllCaps="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/prefix_dialog_prefix_none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prefix_dialog_no_prefix"
+        android:textAllCaps="true"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginRight="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_alignBaseline="@+id/prefix_dialog_prefix_add"
+        android:layout_alignBottom="@+id/prefix_dialog_prefix_add"
+        android:layout_toLeftOf="@+id/prefix_dialog_prefix_add"
+        android:layout_toStartOf="@+id/prefix_dialog_prefix_add"
+         />
+
+
+</RelativeLayout>

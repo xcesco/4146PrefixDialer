@@ -1,0 +1,36 @@
+﻿<resources>
+    <string name="title_section_contacts_list">Contatti</string>
+    <string name="title_section_settings">Impostazioni</string>
+    <string name="title_section_privacy">Informativa sulla privacy</string>
+    <string name="title_section_rate_me">Vota questa app sul Play Store</string>
+
+    <string name="button_allow">Consenti</string>
+    <string name="button_deny">Nega</string>
+    <string name="label_phone_number">Numero di telefono</string>
+
+    <string name="tab_header_phone_list">Contatti</string>
+    <string name="tab_header_config">Configurazione</string>
+
+    <string name="phone_list_empty_msg">Nessun contatto configurato</string>
+    <string name="phone_remove_confirmation">Sei sicuro di che voler rimuovere la configurazione selezionata?</string>
+
+    <!-- config frament -->
+    <string name="config_enable">Attiva la gestione del prefisso</string>
+    <string name="config_dual_billing_prefix">Prefisso aziendale</string>
+    <string name="config_international_prefix">Prefisso internazionale</string>
+    <string name="config_dialog_timeout">Timeout in secondi della dialog</string>
+
+    <!-- dialog -->
+    <string name="prefix_dialog_question">Aggiungi il prefisso %1$s a questo numero?</string>
+    <string name="prefix_countdown_label">Questa finestra si chiuderà in %1$d secondi</string>
+    <string name="prefix_dialog_add_prefix">Aggiungi prefisso</string>
+    <string name="prefix_dialog_no_prefix">Senza prefisso</string>
+    <string name="prefix_dialog_end_call">Fine chiamata</string>
+
+    <!-- validation -->
+    <string name="validation_integer_greater_eq_than">Il valore deve essere maggiore o uguale a %1$d</string>
+    <string name="validation_integer_less_eq_than">Il valore deve essere minore o uguale a %1$d</string>
+    <string name="validation_required">Valore richiesto</string>
+    <string name="config_skip_message">Evita il messaggio</string>
+
+</resources>

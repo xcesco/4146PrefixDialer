@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_privacy_policy"
+        android:orderInCategory="101"
+        app:showAsAction="never"
+        android:title="@string/title_section_privacy" />
+
+    <item
+        android:id="@+id/action_rate_me"
+        android:orderInCategory="102"
+        app:showAsAction="never"
+        android:title="@string/title_section_rate_me" />
+
+</menu>

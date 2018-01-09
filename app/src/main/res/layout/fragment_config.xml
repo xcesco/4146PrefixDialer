@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    tools:context="com.abubusoft.xeno.MainActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/config_enable"
+        style="?android:textAppearance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:checked="true"
+        android:text="@string/config_enable"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="?android:textAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/config_dual_billing_prefix" />
+
+        <EditText
+            android:id="@+id/config_dual_billing_prefix_edit"
+            style="?android:textAppearance"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:inputType="number"
+            android:maxLength="4"
+            android:text="4146" />
+
+    </RelativeLayout>
+
+    <TextView
+        style="?android:textAppearance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/config_international_prefix"
+
+        />
+
+    <Spinner
+        android:id="@+id/config_default_international_prefix_spinner"
+        style="?android:textAppearance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="?android:textAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="24dp"
+            android:text="@string/config_dialog_timeout" />
+
+        <EditText
+            android:id="@+id/config_timeout_prefix_dialog"
+            style="?android:textAppearance"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="40" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/config_skip_message"
+        style="?android:textAppearance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/config_skip_message"
+        />
+
+</LinearLayout>
+
+
+
+

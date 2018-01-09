@@ -1,0 +1,36 @@
+<resources>
+    <string name="title_section_contacts_list">Contacts</string>
+    <string name="title_section_settings">Settings</string>
+    <string name="title_section_privacy">Privacy policy</string>
+    <string name="title_section_rate_me">Rate this app on Play Store</string>
+
+    <string name="button_allow">Allow</string>
+    <string name="button_deny">Deny</string>
+    <string name="label_phone_number">Phone number</string>
+
+    <string name="tab_header_phone_list">Contacts</string>
+    <string name="tab_header_config">Configuration</string>
+
+    <string name="phone_list_empty_msg">No contact configured</string>
+    <string name="phone_remove_confirmation">Are you sure you want to remove the selected configuration?</string>
+
+    <!-- config frament -->
+    <string name="config_enable">Active management of the prefix</string>
+    <string name="config_dual_billing_prefix">Company prefix</string>
+    <string name="config_international_prefix">International prefix</string>
+    <string name="config_dialog_timeout">Windows\'s time out in seconds</string>
+
+    <!-- dialog -->
+    <string name="prefix_dialog_question">Add the prefix %1$s to this number?</string>
+    <string name="prefix_countdown_label">This window will close in %1$d seconds</string>
+    <string name="prefix_dialog_add_prefix">Add prefix</string>
+    <string name="prefix_dialog_no_prefix">No prefix</string>
+    <string name="prefix_dialog_end_call">End call</string>
+
+    <!-- validation -->
+    <string name="validation_integer_greater_eq_than">The value must be greater than or equal to %1$d</string>
+    <string name="validation_integer_less_eq_than">The value must be less than or equal to %1$d</string>
+    <string name="validation_required">Required value</string>
+    <string name="config_skip_message">Skip message</string>
+
+</resources>

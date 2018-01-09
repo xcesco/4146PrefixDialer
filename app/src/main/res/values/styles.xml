@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="XenoLabelStyle">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">@color/colorLight</item>
+    </style>
+
+    <style name="XenoLabelWhiteStyle">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="XenoButtonPrimaryStyle">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="XenoButtonSecondaryStyle">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="TextAppearance.Design.Hint" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <!--<item name="android:textSize">@dimen/abc_text_size_caption_material</item>-->
+    </style>
+
+    <style name="XenoInputLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:paddingBottom">@dimen/input_label_vertical_spacing</item>
+        <item name="android:paddingLeft">@dimen/input_label_horizontal_spacing</item>
+        <item name="android:paddingRight">@dimen/input_label_horizontal_spacing</item>
+    </style>
+
+</resources>

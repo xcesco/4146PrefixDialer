@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/switcher">
+
+    <com.abubusoft.xeno.android.EmptyRecyclerView
+        android:id="@+id/phone_list_recycler_view"
+        android:name="com.abubusoft.xeno.ItemFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="com.abubusoft.xeno.PhoneListFragment"
+        tools:listitem="@layout/layout_phone"
+        />
+
+    <LinearLayout
+        android:id="@+id/phone_list_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/phone_list_empty_msg" />
+
+    </LinearLayout>
+
+</LinearLayout>
