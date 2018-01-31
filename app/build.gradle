@@ -5,10 +5,11 @@ android {
         abortOnError false
     }
 
+
     sourceSets {
         androidTest {
             //resources.srcDirs += ['../schemas']
-            resources.srcDirs += ['./src/androidTest/res']
+            resources.include './src/androidTest/res'
         }
     }
 
@@ -47,13 +48,13 @@ android {
             zipAlignEnabled true
             proguardFile 'proguard-rules.pro'
 
-            applicationVariants.all { variant ->
+           /* applicationVariants.all { variant ->
                 variant.outputs.all { output ->
                     def newName = output.outputFile.getName()
                     newName = newName.replace("app", defaultConfig.applicationId + "-" + defaultConfig.versionName)
                     outputFileName = new File(newName)
                 }
-            }
+            }*/
         }
     }
     compileOptions {
