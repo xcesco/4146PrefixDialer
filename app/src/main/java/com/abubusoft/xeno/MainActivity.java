@@ -128,30 +128,6 @@ public class MainActivity extends AppCompatActivity
         Logger.info("enableProcessOutgoindCalls");
     }
 
-
-
-
-
-//    @OnShowRationale({Manifest.permission.PROCESS_OUTGOING_CALLS, Manifest.permission.READ_CONTACTS})
-//    public void showRationaleForCamera(final PermissionRequest request) {
-//        new AlertDialog.Builder(this)
-//                .setMessage(R.string.permission_phone_rationale)
-//                .setPositiveButton(R.string.button_allow, new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialog, int which) {
-//                        request.proceed();
-//                    }
-//                })
-//                .setNegativeButton(R.string.button_deny, new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialog, int which) {
-//                        request.cancel();
-//                    }
-//                })
-//                .create()
-//                .show();
-//    }
-
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

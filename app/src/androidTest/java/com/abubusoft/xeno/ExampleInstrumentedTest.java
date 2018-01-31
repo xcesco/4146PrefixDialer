@@ -38,32 +38,20 @@ public class ExampleInstrumentedTest {
         Context context = InstrumentationRegistry.getTargetContext();
 
         KriptonLibrary.init(context);
-        // assertEquals("abubusoft.com.xeno", appContext.getPackageName());
-        InputStream schema1 = testContext
-                .getResources()
-                .openRawResource(R.raw.xeno_schema_1);
-
-        InputStream schema2 = testContext
-                .getResources()
-                .openRawResource(R.raw.xeno_schema_2);
-
-        InputStream schema3 = testContext
-                .getResources()
-                .openRawResource(R.raw.xeno_schema_2);
 
         SQLiteSchemaVerifierHelper.clearDatabase(context);
 
-        SQLiteUpdateTestDatabase database = SQLiteUpdateTestDatabase.builder(1, schema1)
+        SQLiteUpdateTestDatabase database = SQLiteUpdateTestDatabase.builder(1, testContext, R.raw.xeno_schema_1)
                 .addVersionUpdateTask(new SQLiteUpdateTask(2) {
                     @Override
                     public void execute(SQLiteDatabase database) {
                         SQLiteUpdateTaskHelper.renameTablesWithPrefix(database, "tmp_");
-                        SQLiteUpdateTaskHelper.executeSQL(database, schema2);
+                        SQLiteUpdateTaskHelper.executeSQL(database, testContext, R.raw.xeno_schema_2);
                         SQLiteUpdateTaskHelper.dropTablesWithPrefix(database, "tmp_");
                     }
                 }).build();
 
-        database.updateAndVerify(2, schema3);
+        database.updateAndVerify(2, testContext, R.raw.xeno_schema_2);
     }
 
     @Test
