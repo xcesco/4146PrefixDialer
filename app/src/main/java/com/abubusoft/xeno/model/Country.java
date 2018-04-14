@@ -12,8 +12,9 @@ import com.abubusoft.kripton.annotation.Bind;
 import com.abubusoft.kripton.annotation.BindDisabled;
 import com.abubusoft.kripton.annotation.BindType;
 
+// needed to parse json
 @BindType
-@BindTable(name = "hello")
+@BindTable
 public class Country {
 
     @BindColumn(columnType = ColumnType.PRIMARY_KEY)

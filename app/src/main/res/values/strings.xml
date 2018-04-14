@@ -32,5 +32,16 @@
     <string name="validation_integer_less_eq_than">The value must be less than or equal to %1$d</string>
     <string name="validation_required">Required value</string>
     <string name="config_skip_message">Skip message</string>
+    <string name="title_activity_error">ErrorActivity</string>
 
+    <!-- crash info -->
+    <string name="customactivityoncrash_error_activity_error_occurred_explanation">Sorry, an unexpected error occurred.\nNo personal data will be taken from your device.</string>
+    <string name="customactivityoncrash_error_activity_restart_app">Restart app</string>
+    <string name="customactivityoncrash_error_activity_close_app">Close app</string>
+    <string name="customactivityoncrash_error_activity_error_details">Error details</string>
+    <string name="customactivityoncrash_error_activity_error_details_title">Error details</string>
+    <string name="customactivityoncrash_error_activity_error_details_close">Close</string>
+    <string name="customactivityoncrash_error_activity_error_details_copy">Copy to clipboard</string>
+    <string name="customactivityoncrash_error_activity_error_details_copied">Copied to clipboard</string>
+    <string name="customactivityoncrash_error_activity_error_details_clipboard_label">Error information</string>
 </resources>

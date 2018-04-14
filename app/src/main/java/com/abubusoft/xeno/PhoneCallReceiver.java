@@ -161,6 +161,7 @@ public class PhoneCallReceiver extends BroadcastReceiver {
                                     WindowManager.LayoutParams.MATCH_PARENT,
                                     WindowManager.LayoutParams.MATCH_PARENT,
                                     WindowManager.LayoutParams.TYPE_SYSTEM_ALERT,
+                                    //WindowManager.LayoutParams.TYPE_APPLICATION_PANEL,
                                     WindowManager.LayoutParams.FLAG_FULLSCREEN,
                                     PixelFormat.RGBA_8888);
 

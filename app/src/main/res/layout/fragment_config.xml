@@ -96,6 +96,7 @@
 
 
     <android.support.v7.widget.SwitchCompat
+        android:visibility="gone"
         android:id="@+id/config_skip_message"
         style="?android:textAppearance"
         android:layout_width="match_parent"
