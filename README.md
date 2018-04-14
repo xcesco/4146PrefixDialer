@@ -16,7 +16,6 @@ This application is free and does not include any advertisement!
 
 You can found this application on Google Play at https://play.google.com/store/apps/details?id=com.abubusoft.xeno
 
-It uses ![Kripton Persistence Library](http://github.com/xcesco/kripton) to store configuration and user settings on a SQLite database.
-
+It uses [Kripton Persistence Library](http://github.com/xcesco/kripton) to store configuration and user settings on a SQLite database.
 
 
