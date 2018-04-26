@@ -156,12 +156,20 @@ public class PhoneCallReceiver extends BroadcastReceiver {
                                 return;
                             }
 
+                            int LAYOUT_FLAG;
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                                LAYOUT_FLAG = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY;
+                            } else {
+                                LAYOUT_FLAG = WindowManager.LayoutParams.TYPE_SYSTEM_ALERT;
+                            }
+
 
                             WindowManager.LayoutParams params = new WindowManager.LayoutParams(
                                     WindowManager.LayoutParams.MATCH_PARENT,
                                     WindowManager.LayoutParams.MATCH_PARENT,
-                                    WindowManager.LayoutParams.TYPE_SYSTEM_ALERT,
-                                    //WindowManager.LayoutParams.TYPE_APPLICATION_PANEL,
+                                    //WindowManager.LayoutParams.TYPE_SYSTEM_ERROR,
+                                    //WindowManager.LayoutParams.TYPE_SYSTEM_ALERT,
+                                    LAYOUT_FLAG,
                                     WindowManager.LayoutParams.FLAG_FULLSCREEN,
                                     PixelFormat.RGBA_8888);
 
