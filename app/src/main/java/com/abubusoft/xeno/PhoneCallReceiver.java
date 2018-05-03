@@ -26,6 +26,7 @@ import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.abubusoft.kripton.android.Logger;
+import com.abubusoft.kripton.android.sqlite.TransactionResult;
 import com.abubusoft.kripton.common.One;
 import com.abubusoft.kripton.common.Pair;
 import com.abubusoft.xeno.events.EventPhoneNumberAdded;
@@ -229,7 +230,7 @@ public class PhoneCallReceiver extends BroadcastReceiver {
     WindowManager windowManager;
 
     public void displayWindow(Context context, final ExecutionResult result, Pair<String, String> contact) {
-        final One<Boolean> windowOpened=new One<Boolean>(false);
+        final One<Boolean> windowOpened = new One<Boolean>(false);
 
         if (!canDrawOverlayViews(context)) {
             //Toast.makeText(context,"")
@@ -265,7 +266,7 @@ public class PhoneCallReceiver extends BroadcastReceiver {
         myView.addOnAttachStateChangeListener(new View.OnAttachStateChangeListener() {
             @Override
             public void onViewAttachedToWindow(final View v) {
-                windowOpened.value0=true;
+                windowOpened.value0 = true;
 
                 new CountDownTimer(result.prefixConfig.dialogTimeout * 1000, 400) { // adjust the milli seconds here
 
@@ -294,19 +295,19 @@ public class PhoneCallReceiver extends BroadcastReceiver {
         ((TextView) myView.findViewById(R.id.prefix_dialog_ask)).setText(context.getString(R.string.prefix_dialog_question, result.prefixConfig.dualBillingPrefix));
 
         myView.findViewById(R.id.prefix_dialog_prefix_add).setOnClickListener((View v) -> {
-                manageOnClick(context, ActionType.ADD_PREFIX, result, contact, windowManager, myView);
-                //windowManager.removeView(myView);
+            manageOnClick(context, ActionType.ADD_PREFIX, result, contact, windowManager, myView);
+            //windowManager.removeView(myView);
 
         });
 
         myView.findViewById(R.id.prefix_dialog_prefix_none).setOnClickListener((View v) -> {
-                manageOnClick(context, ActionType.DO_NOTHING, result, contact, windowManager, myView);
+            manageOnClick(context, ActionType.DO_NOTHING, result, contact, windowManager, myView);
 
         });
 
         myView.findViewById(R.id.prefix_dialog_call_end).setOnClickListener((View v) -> {
-                // non fa niente e chiude la telefonata
-                windowManager.removeView(myView);
+            // non fa niente e chiude la telefonata
+            windowManager.removeView(myView);
         });
 
         windowManager.addView(myView, params);
@@ -318,9 +319,10 @@ public class PhoneCallReceiver extends BroadcastReceiver {
     }
 
     private void manageOnClick(final Context context, ActionType action, final ExecutionResult result, Pair<String, String> contact, WindowManager windowManager, View myView) {
-        BindXenoDataSource.instance().executeBatch((BindXenoDaoFactory daoFactory, ObservableEmitter<PhoneNumber> emitter) -> {
+        final PhoneNumber phone = new PhoneNumber();
+        BindXenoDataSource.instance().execute((BindXenoDaoFactory daoFactory) -> {
             Logger.info("subscribe " + Thread.currentThread().getName());
-            PhoneNumber phone = new PhoneNumber();
+
 
             phone.action = action;
             phone.number = result.phoneNumber;
@@ -329,31 +331,26 @@ public class PhoneCallReceiver extends BroadcastReceiver {
             phone.contactId = contact.value1;
 
             daoFactory.getPhoneDao().insert(phone);
-            emitter.onNext(phone);
 
-        }, true)
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe((PhoneNumber phoneNumber) -> {
-                    Logger.info("observe on " + Thread.currentThread().getName());
+            return TransactionResult.COMMIT;
+        });
+        Logger.info("observe on " + Thread.currentThread().getName());
 
-                    EventBus.getDefault().post(new EventPhoneNumberAdded(phoneNumber));
+        EventBus.getDefault().post(new EventPhoneNumberAdded(phone));
 
-                    if (ActivityCompat.checkSelfPermission(context, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                        return;
-                    }
-                    //Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + config.dualBillingPrefix + number+ (config.dualBillingAddSuffix ? "pp1": "")));
-                    //String phoneNumber = config.dualBillingPrefix + number.replace("+", "00")  /*+ (config.dualBillingAddSuffix ? ",1,2,3,4,5,6": "")*/;
-                    String phoneNumberString = result.prefixConfig.dualBillingPrefix + result.phoneNumber.replace("+", "00");
+        if (ActivityCompat.checkSelfPermission(context, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            return;
+        }
+        //Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + config.dualBillingPrefix + number+ (config.dualBillingAddSuffix ? "pp1": "")));
+        //String phoneNumber = config.dualBillingPrefix + number.replace("+", "00")  /*+ (config.dualBillingAddSuffix ? ",1,2,3,4,5,6": "")*/;
+        String phoneNumberString = result.prefixConfig.dualBillingPrefix + result.phoneNumber.replace("+", "00");
 
-                    Logger.info("Redirect to " + phoneNumber);
-                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + phoneNumberString));
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    context.startActivity(intent);
+        Logger.info("Redirect to " + phone);
+        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + phoneNumberString));
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(intent);
 
-                    WindowManager wm1 = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
-                    wm1.removeView(myView);
-                });
+        windowManager.removeView(myView);
     }
 
 
