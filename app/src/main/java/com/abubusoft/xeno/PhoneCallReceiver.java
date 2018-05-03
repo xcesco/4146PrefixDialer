@@ -24,35 +24,35 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.abubusoft.kripton.android.Logger;
+import com.abubusoft.kripton.common.One;
 import com.abubusoft.kripton.common.Pair;
 import com.abubusoft.xeno.events.EventPhoneNumberAdded;
 import com.abubusoft.xeno.model.ActionType;
 import com.abubusoft.xeno.model.Country;
 import com.abubusoft.xeno.model.PhoneNumber;
+import com.abubusoft.xeno.persistence.BindXenoDaoFactory;
 import com.abubusoft.xeno.persistence.BindXenoDataSource;
 import com.abubusoft.xeno.persistence.CountryDaoImpl;
 import com.abubusoft.xeno.persistence.PhoneDaoImpl;
 import com.abubusoft.xeno.persistence.PrefixConfigDaoImpl;
+import com.google.i18n.phonenumbers.NumberParseException;
 import com.google.i18n.phonenumbers.PhoneNumberUtil;
 import com.google.i18n.phonenumbers.Phonenumber;
 
 import java.lang.reflect.Method;
 import java.util.Date;
-import java.util.Locale;
 
 import com.abubusoft.xeno.model.PrefixConfig;
 
 import org.greenrobot.eventbus.EventBus;
 
+import io.reactivex.ObservableEmitter;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.schedulers.Schedulers;
+
 import static android.content.Context.WINDOW_SERVICE;
-import static android.content.pm.PackageManager.PERMISSION_GRANTED;
-import static android.content.pm.PackageManager.PERMISSION_GRANTED;
-import static android.content.pm.PackageManager.PERMISSION_GRANTED;
-import static com.abubusoft.xeno.R.string.prefix_dialog_question;
-import static com.google.i18n.phonenumbers.Phonenumber.PhoneNumber.CountryCodeSource.FROM_DEFAULT_COUNTRY;
 
 public class PhoneCallReceiver extends BroadcastReceiver {
 
@@ -60,15 +60,10 @@ public class PhoneCallReceiver extends BroadcastReceiver {
 
     private static Date callStartTime;
 
-    private static boolean isIncoming;
-
-    private static String currentNumber;  //because the passed incoming is only valid in ringing
-
     public static Pair<String, String> getContactName(Context context, String phoneNumber) {
-        Pair<String, String> result=new Pair<>();
+        Pair<String, String> result = new Pair<>();
 
-        if (context.checkCallingOrSelfPermission(Manifest.permission.READ_CONTACTS)!=PackageManager.PERMISSION_GRANTED)
-        {
+        if (context.checkCallingOrSelfPermission(Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED) {
             return result;
         }
 
@@ -79,341 +74,303 @@ public class PhoneCallReceiver extends BroadcastReceiver {
             return null;
         }
         String contactName = null;
-        String contactId=null;
-        if(cursor.moveToFirst()) {
+        String contactId = null;
+        if (cursor.moveToFirst()) {
             contactName = cursor.getString(cursor.getColumnIndex(ContactsContract.PhoneLookup.DISPLAY_NAME));
-            contactId= cursor.getString(cursor.getColumnIndex(ContactsContract.PhoneLookup._ID));
+            contactId = cursor.getString(cursor.getColumnIndex(ContactsContract.PhoneLookup._ID));
 
-            result.value0=contactName;
-            result.value1=contactId;
+            result.value0 = contactName;
+            result.value1 = contactId;
         }
 
-        if(cursor != null && !cursor.isClosed()) {
+        if (cursor != null && !cursor.isClosed()) {
             cursor.close();
         }
 
         return result;
     }
 
+    public enum ResultType {
+        SKIP,
+        PROCEED,
+        ASK,
+        ERROR
+    }
+
+    public static class ExecutionResult {
+        public ExecutionResult(ResultType type) {
+            this.result = type;
+        }
+
+        public ExecutionResult(ResultType type, String phoneNumber) {
+            this.result = type;
+            this.phoneNumber = phoneNumber;
+        }
+
+        public ResultType result;
+        public String phoneNumber;
+        public Country country;
+        public PrefixConfig prefixConfig;
+
+        public ExecutionResult(ResultType type, String phoneNumber, PrefixConfig prefixConfig) {
+            this.result = type;
+            this.phoneNumber = phoneNumber;
+            this.prefixConfig = prefixConfig;
+        }
+
+        public ExecutionResult(ResultType type, String phoneNumber, PrefixConfig prefixConfig, Country country) {
+            this.result = type;
+            this.phoneNumber = phoneNumber;
+            this.prefixConfig = prefixConfig;
+            this.country = country;
+        }
+    }
+
     @Override
     public void onReceive(final Context context, Intent intent) {
         if (intent.getAction().equals(Intent.ACTION_NEW_OUTGOING_CALL)) {
-            currentNumber = intent.getExtras().getString(Intent.EXTRA_PHONE_NUMBER);
-            final Pair<String, String> contact=getContactName(context, currentNumber);
+            final One<String> currentNumber = new One<>(intent.getExtras().getString(Intent.EXTRA_PHONE_NUMBER));
+            final Pair<String, String> contact = getContactName(context, currentNumber.value0);
 
-            BindXenoDataSource dataSource = BindXenoDataSource.open();
-            try {
-                final PhoneDaoImpl daoPhone = dataSource.getPhoneDao();
-                PrefixConfigDaoImpl daoPrefix = dataSource.getPrefixConfigDao();
-                CountryDaoImpl daoCountry = dataSource.getCountryDao();
+            BindXenoDataSource.instance().executeBatch((BindXenoDaoFactory daoFactory, ObservableEmitter<ExecutionResult> emitter) -> {
+                final PhoneDaoImpl daoPhone = daoFactory.getPhoneDao();
+                PrefixConfigDaoImpl daoPrefix = daoFactory.getPrefixConfigDao();
+                CountryDaoImpl daoCountry = daoFactory.getCountryDao();
+
                 final PrefixConfig config = daoPrefix.selectOne();
-
-                if (!config.enabled)
-                {
+                if (!config.enabled) {
                     Logger.info("Eseguo skip!");
+                    emitter.onNext(new ExecutionResult(ResultType.SKIP));
                     return;
                 }
 
-                if (currentNumber.startsWith(config.dualBillingPrefix)) {
+                if (currentNumber.value0.startsWith(config.dualBillingPrefix)) {
                     Logger.info("PHONE already inserted, we do nothing");
 
-                    currentNumber+=",,1";
+                    currentNumber.value0 += ",,1";
 
-                    Logger.info("Call "+currentNumber);
-                    this.setResultData(currentNumber);
-
+                    Logger.info("Call " + currentNumber.value0);
+                    emitter.onNext(new ExecutionResult(ResultType.PROCEED, currentNumber.value0));
+                    return;
                 } else {
+                    PhoneNumberUtil phoneUtil = PhoneNumberUtil.getInstance();
+                    Phonenumber.PhoneNumber temp = null;
                     try {
-                        PhoneNumberUtil phoneUtil = PhoneNumberUtil.getInstance();
-                        Phonenumber.PhoneNumber temp = phoneUtil.parse(currentNumber, config.defaultCountry);
-                        final String number = phoneUtil.format(temp, PhoneNumberUtil.PhoneNumberFormat.INTERNATIONAL);
-
-                        Country tempCountry;
-                        tempCountry=daoCountry.selectByCountry(config.defaultCountry);
-                        final Country country=tempCountry;
-
-                        PhoneNumber phone = daoPhone.selectByNumber(number);
-                        if (phone != null) {
-                            switch (phone.action) {
-                                case ADD_PREFIX:
-                                    //this.setResultData(config.dualBillingPrefix + number + (config.dualBillingAddSuffix ? "pp1": ""));
-                                    String phoneNumber=config.dualBillingPrefix + number.replace("+","00");
-
-                                    phoneNumber+=",1";
-
-                                    Logger.info("Call "+phoneNumber);
-                                    this.setResultData(phoneNumber);
-                                    break;
-                                case DO_NOTHING:
-                                    break;
-                            }
-                        } else {
-                            if (!canDrawOverlayViews(context))
-                            {
-                                //Toast.makeText(context,"")
-                                Logger.warn("Permission "+Manifest.permission.SYSTEM_ALERT_WINDOW +" is not enabled");
-                                // non possiamo visualizzare nulla
-                                return;
-                            }
-
-                            int LAYOUT_FLAG;
-                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                                LAYOUT_FLAG = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY;
-                            } else {
-                                LAYOUT_FLAG = WindowManager.LayoutParams.TYPE_SYSTEM_ALERT;
-                            }
-
-
-                            WindowManager.LayoutParams params = new WindowManager.LayoutParams(
-                                    WindowManager.LayoutParams.MATCH_PARENT,
-                                    WindowManager.LayoutParams.MATCH_PARENT,
-                                    //WindowManager.LayoutParams.TYPE_SYSTEM_ERROR,
-                                    //WindowManager.LayoutParams.TYPE_SYSTEM_ALERT,
-                                    LAYOUT_FLAG,
-                                    WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                                    PixelFormat.RGBA_8888);
-
-                            final Pair<Boolean, String> result = new Pair<>();
-
-                            final WindowManager windowManager = (WindowManager) context.getSystemService(WINDOW_SERVICE);
-
-                            final LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            final View myView = inflater.inflate(R.layout.layout_prefix_dialog, null);
-
-                            params.gravity = Gravity.TOP | Gravity.LEFT;
-                            myView.addOnAttachStateChangeListener(new View.OnAttachStateChangeListener() {
-                                @Override
-                                public void onViewAttachedToWindow(final View v) {
-                                    result.value0 = true;
-
-                                    new CountDownTimer(config.dialogTimeout*1000, 400) { // adjust the milli seconds here
-
-                                        public void onTick(long millisUntilFinished) {
-                                            TextView txtCountDown = (TextView) v.findViewById(R.id.prefix_dialog_counter);
-                                            txtCountDown.setText(context.getString(R.string.prefix_countdown_label, millisUntilFinished / 1000));
-                                        }
-
-                                        public void onFinish() {
-                                            if (result.value0) {
-                                                windowManager.removeView(myView);
-                                            }
-                                        }
-                                    }.start();
-                                }
-
-                                @Override
-                                public void onViewDetachedFromWindow(View v) {
-                                    result.value0 = false;
-                                }
-                            });
-
-                            ((TextView) myView.findViewById(R.id.prefix_dialog_name)).setText(contact.value0);
-                            ((TextView) myView.findViewById(R.id.prefix_dialog_number)).setText(number);
-                            ((TextView) myView.findViewById(R.id.prefix_dialog_ask)).setText(context.getString(R.string.prefix_dialog_question, config.dualBillingPrefix));
-
-
-                            myView.findViewById(R.id.prefix_dialog_prefix_add).setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    BindXenoDataSource dataSource = BindXenoDataSource.open();
-                                    try {
-                                        PhoneNumber phone = new PhoneNumber();
-
-                                        phone.action = ActionType.ADD_PREFIX;
-                                        phone.number = number;
-                                        phone.countryCode=country.code;
-                                        phone.contactName=contact.value0;
-                                        phone.contactId=contact.value1;
-
-                                        dataSource.getPhoneDao().insert(phone);
-
-                                        EventBus.getDefault().post(new EventPhoneNumberAdded(phone));
-
-                                    } finally {
-                                        dataSource.close();
-
-                                        if (result.value0) {
-                                            windowManager.removeView(myView);
-                                        }
-
-                                        if (ActivityCompat.checkSelfPermission(context, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                                            return;
-                                        }
-                                        //Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + config.dualBillingPrefix + number+ (config.dualBillingAddSuffix ? "pp1": "")));
-                                        String phoneNumber=config.dualBillingPrefix + number.replace("+","00")  /*+ (config.dualBillingAddSuffix ? ",1,2,3,4,5,6": "")*/;
-                                        Logger.info("Redirect to "+phoneNumber);
-                                        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + phoneNumber));
-                                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                        context.startActivity(intent);
-                                    }
-
-                                }
-                            });
-
-                            myView.findViewById(R.id.prefix_dialog_prefix_none).setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    BindXenoDataSource dataSource = BindXenoDataSource.open();
-                                    try {
-                                        PhoneNumber phone = new PhoneNumber();
-
-                                        phone.action = ActionType.DO_NOTHING;
-                                        phone.number = number;
-                                        phone.countryCode=country.code;
-                                        phone.contactName=contact.value0;
-                                        phone.contactId=contact.value1;
-
-                                        dataSource.getPhoneDao().insert(phone);
-
-                                        EventBus.getDefault().post(new EventPhoneNumberAdded(phone));
-                                    } finally {
-                                        dataSource.close();
-
-                                        if (ActivityCompat.checkSelfPermission(context, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                                            return;
-                                        }
-                                        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + number));
-                                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                        context.startActivity(intent);
-
-                                        if (result.value0) {
-                                            windowManager.removeView(myView);
-                                        }
-
-
-                                    }
-                                }
-                            });
-
-                            myView.findViewById(R.id.prefix_dialog_call_end).setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    // non fa niente e chiude la telefonata
-                                    if (result.value0) {
-                                        windowManager.removeView(myView);
-                                    }
-                                }
-                            });
-
-                            windowManager.addView(myView, params);
-
-
-                            // chiudiamo la telefonata
-                            setResultCode(Activity.RESULT_CANCELED);
-                            setResultData(null);
-                            abortBroadcast();
-                        }
-                        //  }
-
-                    } catch (Exception e) {
+                        temp = phoneUtil.parse(currentNumber.value0, config.defaultCountry);
+                    } catch (NumberParseException e) {
                         e.printStackTrace();
-                        System.err.println("NumberParseException was thrown: " + e.toString());
+                    }
+                    final String number = phoneUtil.format(temp, PhoneNumberUtil.PhoneNumberFormat.INTERNATIONAL);
+
+                    Country tempCountry;
+                    tempCountry = daoCountry.selectByCountry(config.defaultCountry);
+                    final Country country = tempCountry;
+
+                    PhoneNumber phone = daoPhone.selectByNumber(number);
+                    if (phone != null) {
+                        switch (phone.action) {
+                            case ADD_PREFIX:
+                                //this.setResultData(config.dualBillingPrefix + number + (config.dualBillingAddSuffix ? "pp1": ""));
+                                String phoneNumber = config.dualBillingPrefix + number.replace("+", "00");
+
+                                phoneNumber += ",,1";
+
+                                Logger.info("Call " + phoneNumber);
+                                emitter.onNext(new ExecutionResult(ResultType.PROCEED, phoneNumber, config));
+                                return;
+                            case DO_NOTHING:
+                                emitter.onNext(new ExecutionResult(ResultType.PROCEED, phone.number));
+                                return;
+                        }
+                    } else {
+                        emitter.onNext(new ExecutionResult(ResultType.ASK, number, config, country));
+                        return;
                     }
                 }
-            } finally {
-                dataSource.close();
-            }
+            })
+                    .subscribeOn(Schedulers.io())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe((ExecutionResult result) -> {
+                        Logger.info("observe on " + Thread.currentThread().getName());
 
-        } else {
-            String stateStr = intent.getExtras().getString(TelephonyManager.EXTRA_STATE);
-            String number = intent.getExtras().getString(TelephonyManager.EXTRA_INCOMING_NUMBER);
-            int state = 0;
-            if (stateStr.equals(TelephonyManager.EXTRA_STATE_IDLE)) {
-                state = TelephonyManager.CALL_STATE_IDLE;
-            } else if (stateStr.equals(TelephonyManager.EXTRA_STATE_OFFHOOK)) {
-                state = TelephonyManager.CALL_STATE_OFFHOOK;
-            } else if (stateStr.equals(TelephonyManager.EXTRA_STATE_RINGING)) {
-                state = TelephonyManager.CALL_STATE_RINGING;
-            }
+                        switch (result.result) {
+                            case SKIP:
+                                return;
+                            case PROCEED:
+                                Logger.info("Call " + result.phoneNumber);
+                                this.setResultData(result.phoneNumber);
+                                return;
+                            case ASK:
+                                displayWindow(context, result, contact);
+                                break;
+                            case ERROR:
+                                break;
+                        }
+                    });
 
 
-            onCallStateChanged(context, state, number);
         }
     }
 
     @SuppressLint("NewApi")
-    public static boolean canDrawOverlayViews(Context con){
-        if(Build.VERSION.SDK_INT< Build.VERSION_CODES.LOLLIPOP)
+    public static boolean canDrawOverlayViews(Context con) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP)
             return true;
 
         try {
             return Settings.canDrawOverlays(con);
-        }
-        catch(NoSuchMethodError e){
+        } catch (NoSuchMethodError e) {
             return canDrawOverlaysUsingReflection(con);
         }
 
     }
 
+    View myView;
+    WindowManager windowManager;
+
+    public void displayWindow(Context context, final ExecutionResult result, Pair<String, String> contact) {
+        final One<Boolean> windowOpened=new One<Boolean>(false);
+
+        if (!canDrawOverlayViews(context)) {
+            //Toast.makeText(context,"")
+            Logger.warn("Permission " + Manifest.permission.SYSTEM_ALERT_WINDOW + " is not enabled");
+            // non possiamo visualizzare nulla
+            return;
+        }
+
+        int LAYOUT_FLAG;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            LAYOUT_FLAG = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY;
+        } else {
+            LAYOUT_FLAG = WindowManager.LayoutParams.TYPE_SYSTEM_ALERT;
+        }
+
+        WindowManager.LayoutParams params = new WindowManager.LayoutParams(
+                WindowManager.LayoutParams.MATCH_PARENT,
+                WindowManager.LayoutParams.MATCH_PARENT,
+                //WindowManager.LayoutParams.TYPE_SYSTEM_ERROR,
+                //WindowManager.LayoutParams.TYPE_SYSTEM_ALERT,
+                LAYOUT_FLAG,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                PixelFormat.RGBA_8888);
+        params.gravity = Gravity.TOP | Gravity.LEFT;
+
+        final Pair<Boolean, String> result0 = new Pair<>();
+
+        windowManager = (WindowManager) context.getSystemService(WINDOW_SERVICE);
+
+        final LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        myView = inflater.inflate(R.layout.layout_prefix_dialog, null);
+
+        myView.addOnAttachStateChangeListener(new View.OnAttachStateChangeListener() {
+            @Override
+            public void onViewAttachedToWindow(final View v) {
+                windowOpened.value0=true;
+
+                new CountDownTimer(result.prefixConfig.dialogTimeout * 1000, 400) { // adjust the milli seconds here
+
+                    public void onTick(long millisUntilFinished) {
+                        TextView txtCountDown = (TextView) v.findViewById(R.id.prefix_dialog_counter);
+                        txtCountDown.setText(context.getString(R.string.prefix_countdown_label, millisUntilFinished / 1000));
+                    }
+
+                    public void onFinish() {
+                        Logger.info("Timer is finished");
+                        if (windowOpened.value0) {
+                            windowManager.removeView(myView);
+                        }
+                    }
+                }.start();
+            }
+
+            @Override
+            public void onViewDetachedFromWindow(View v) {
+                windowOpened.value0 = false;
+            }
+        });
+
+        ((TextView) myView.findViewById(R.id.prefix_dialog_name)).setText(contact.value0);
+        ((TextView) myView.findViewById(R.id.prefix_dialog_number)).setText(result.phoneNumber);
+        ((TextView) myView.findViewById(R.id.prefix_dialog_ask)).setText(context.getString(R.string.prefix_dialog_question, result.prefixConfig.dualBillingPrefix));
+
+        myView.findViewById(R.id.prefix_dialog_prefix_add).setOnClickListener((View v) -> {
+                manageOnClick(context, ActionType.ADD_PREFIX, result, contact, windowManager, myView);
+                //windowManager.removeView(myView);
+
+        });
+
+        myView.findViewById(R.id.prefix_dialog_prefix_none).setOnClickListener((View v) -> {
+                manageOnClick(context, ActionType.DO_NOTHING, result, contact, windowManager, myView);
+
+        });
+
+        myView.findViewById(R.id.prefix_dialog_call_end).setOnClickListener((View v) -> {
+                // non fa niente e chiude la telefonata
+                windowManager.removeView(myView);
+        });
+
+        windowManager.addView(myView, params);
+
+        // chiudiamo la telefonata
+        setResultCode(Activity.RESULT_CANCELED);
+        setResultData(null);
+        abortBroadcast();
+    }
+
+    private void manageOnClick(final Context context, ActionType action, final ExecutionResult result, Pair<String, String> contact, WindowManager windowManager, View myView) {
+        BindXenoDataSource.instance().executeBatch((BindXenoDaoFactory daoFactory, ObservableEmitter<PhoneNumber> emitter) -> {
+            Logger.info("subscribe " + Thread.currentThread().getName());
+            PhoneNumber phone = new PhoneNumber();
+
+            phone.action = action;
+            phone.number = result.phoneNumber;
+            phone.countryCode = result.country.code;
+            phone.contactName = contact.value0;
+            phone.contactId = contact.value1;
+
+            daoFactory.getPhoneDao().insert(phone);
+            emitter.onNext(phone);
+
+        }, true)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe((PhoneNumber phoneNumber) -> {
+                    Logger.info("observe on " + Thread.currentThread().getName());
+
+                    EventBus.getDefault().post(new EventPhoneNumberAdded(phoneNumber));
+
+                    if (ActivityCompat.checkSelfPermission(context, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                        return;
+                    }
+                    //Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + config.dualBillingPrefix + number+ (config.dualBillingAddSuffix ? "pp1": "")));
+                    //String phoneNumber = config.dualBillingPrefix + number.replace("+", "00")  /*+ (config.dualBillingAddSuffix ? ",1,2,3,4,5,6": "")*/;
+                    String phoneNumberString = result.prefixConfig.dualBillingPrefix + result.phoneNumber.replace("+", "00");
+
+                    Logger.info("Redirect to " + phoneNumber);
+                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + phoneNumberString));
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    context.startActivity(intent);
+
+                    WindowManager wm1 = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+                    wm1.removeView(myView);
+                });
+    }
 
 
     public static boolean canDrawOverlaysUsingReflection(Context context) {
-
         try {
-
             AppOpsManager manager = (AppOpsManager) context.getSystemService(Context.APP_OPS_SERVICE);
             Class clazz = AppOpsManager.class;
-            Method dispatchMethod = clazz.getMethod("checkOp", new Class[] { int.class, int.class, String.class });
+            Method dispatchMethod = clazz.getMethod("checkOp", new Class[]{int.class, int.class, String.class});
             //AppOpsManager.OP_SYSTEM_ALERT_WINDOW = 24
-            int mode = (Integer) dispatchMethod.invoke(manager, new Object[] { 24, Binder.getCallingUid(), context.getApplicationContext().getPackageName() });
+            int mode = (Integer) dispatchMethod.invoke(manager, new Object[]{24, Binder.getCallingUid(), context.getApplicationContext().getPackageName()});
 
             return AppOpsManager.MODE_ALLOWED == mode;
 
-        } catch (Exception e) {  return false;  }
+        } catch (Exception e) {
+            return false;
+        }
 
     }
 
-    //Derived classes should override these to respond to specific events of interest
-    //protected abstract void onIncomingCallReceived(Context ctx, String number, Date start);
-    //protected abstract void onIncomingCallAnswered(Context ctx, String number, Date start);
-    //protected abstract void onIncomingCallEnded(Context ctx, String number, Date start, Date end);
-
-    //protected abstract void onOutgoingCallStarted(Context ctx, String number, Date start);
-    // protected abstract void onOutgoingCallEnded(Context ctx, String number, Date start, Date end);
-
-    //   protected abstract void onMissedCall(Context ctx, String number, Date start);
-
-    //Deals with actual events
-
-    //Incoming call-  goes from IDLE to RINGING when it rings, to OFFHOOK when it's answered, to IDLE when its hung up
-    //Outgoing call-  goes from IDLE to OFFHOOK when it dials out, to IDLE when hung up
-    public void onCallStateChanged(Context context, int state, String number) {
-        if (lastState == state) {
-            //No change, debounce extras
-            return;
-        }
-        switch (state) {
-            case TelephonyManager.CALL_STATE_RINGING:
-                isIncoming = true;
-                callStartTime = new Date();
-                currentNumber = number;
-                // onIncomingCallReceived(context, number, callStartTime);
-                break;
-            case TelephonyManager.CALL_STATE_OFFHOOK:
-                //Transition of ringing->offhook are pickups of incoming calls.  Nothing done on them
-                if (lastState != TelephonyManager.CALL_STATE_RINGING) {
-                    isIncoming = false;
-                    callStartTime = new Date();
-                    //   onOutgoingCallStarted(context, currentNumber, callStartTime);
-                } else {
-                    isIncoming = true;
-                    callStartTime = new Date();
-                    // onIncomingCallAnswered(context, currentNumber, callStartTime);
-                }
-
-                break;
-            case TelephonyManager.CALL_STATE_IDLE:
-                //Went to idle-  this is the end of a call.  What type depends on previous state(s)
-                if (lastState == TelephonyManager.CALL_STATE_RINGING) {
-                    //Ring but no pickup-  a miss
-                    //onMissedCall(context, currentNumber, callStartTime);
-                } else if (isIncoming) {
-                    //onIncomingCallEnded(context, currentNumber, callStartTime, new Date());
-                } else {
-                    //onOutgoingCallEnded(context, currentNumber, callStartTime, new Date());
-                }
-                break;
-        }
-        lastState = state;
-    }
 }
