@@ -19,8 +19,8 @@ android {
         applicationId "com.abubusoft.xeno"
         minSdkVersion 19
         targetSdkVersion 27
-        versionCode 106
-        versionName "1.0.6"
+        versionCode 107
+        versionName "1.0.7"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
 
@@ -98,8 +98,6 @@ dependencies {
     implementation "com.jakewharton:butterknife:${butterKnifeVersion}"
     implementation "org.greenrobot:eventbus:${eventBusVersion}"
     implementation 'cat.ereza:customactivityoncrash:2.2.0'
-    implementation 'io.reactivex.rxjava2:rxjava:2.1.7'
-    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
 
     implementation "com.android.support:design:$supportVersion"
     implementation "com.android.support:appcompat-v7:$supportVersion"

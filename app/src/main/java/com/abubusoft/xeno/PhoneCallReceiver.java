@@ -49,11 +49,8 @@ import com.abubusoft.xeno.model.PrefixConfig;
 
 import org.greenrobot.eventbus.EventBus;
 
-import io.reactivex.ObservableEmitter;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.schedulers.Schedulers;
-
 import static android.content.Context.WINDOW_SERVICE;
+import static com.abubusoft.xeno.model.ActionType.ADD_PREFIX;
 
 public class PhoneCallReceiver extends BroadcastReceiver {
 
@@ -133,81 +130,72 @@ public class PhoneCallReceiver extends BroadcastReceiver {
             final One<String> currentNumber = new One<>(intent.getExtras().getString(Intent.EXTRA_PHONE_NUMBER));
             final Pair<String, String> contact = getContactName(context, currentNumber.value0);
 
-            BindXenoDataSource.instance().executeBatch((BindXenoDaoFactory daoFactory, ObservableEmitter<ExecutionResult> emitter) -> {
-                final PhoneDaoImpl daoPhone = daoFactory.getPhoneDao();
-                PrefixConfigDaoImpl daoPrefix = daoFactory.getPrefixConfigDao();
-                CountryDaoImpl daoCountry = daoFactory.getCountryDao();
+            ExecutionResult result = BindXenoDataSource.instance().executeBatch((BindXenoDaoFactory daoFactory) -> {
+                    final PhoneDaoImpl daoPhone = daoFactory.getPhoneDao();
+                    PrefixConfigDaoImpl daoPrefix = daoFactory.getPrefixConfigDao();
+                    CountryDaoImpl daoCountry = daoFactory.getCountryDao();
 
-                final PrefixConfig config = daoPrefix.selectOne();
-                if (!config.enabled) {
-                    Logger.info("Eseguo skip!");
-                    emitter.onNext(new ExecutionResult(ResultType.SKIP));
-                    return;
-                }
-
-                if (currentNumber.value0.startsWith(config.dualBillingPrefix)) {
-                    Logger.info("PHONE already inserted, we do nothing");
-
-                    currentNumber.value0 += ",,1";
-
-                    Logger.info("Call " + currentNumber.value0);
-                    emitter.onNext(new ExecutionResult(ResultType.PROCEED, currentNumber.value0));
-                    return;
-                } else {
-                    PhoneNumberUtil phoneUtil = PhoneNumberUtil.getInstance();
-                    Phonenumber.PhoneNumber temp = null;
-                    try {
-                        temp = phoneUtil.parse(currentNumber.value0, config.defaultCountry);
-                    } catch (NumberParseException e) {
-                        e.printStackTrace();
+                    final PrefixConfig config = daoPrefix.selectOne();
+                    if (!config.enabled) {
+                        Logger.info("Eseguo skip!");
+                        return new ExecutionResult(ResultType.SKIP);
                     }
-                    final String number = phoneUtil.format(temp, PhoneNumberUtil.PhoneNumberFormat.INTERNATIONAL);
 
-                    Country tempCountry;
-                    tempCountry = daoCountry.selectByCountry(config.defaultCountry);
-                    final Country country = tempCountry;
+                    if (currentNumber.value0.startsWith(config.dualBillingPrefix)) {
+                        Logger.info("PHONE already inserted, we do nothing");
 
-                    PhoneNumber phone = daoPhone.selectByNumber(number);
-                    if (phone != null) {
-                        switch (phone.action) {
-                            case ADD_PREFIX:
+                        currentNumber.value0 += ",,1";
+
+                        Logger.info("Call " + currentNumber.value0);
+                        return new ExecutionResult(ResultType.PROCEED, currentNumber.value0);
+                    } else {
+                        PhoneNumberUtil phoneUtil = PhoneNumberUtil.getInstance();
+                        Phonenumber.PhoneNumber temp = null;
+                        try {
+                            temp = phoneUtil.parse(currentNumber.value0, config.defaultCountry);
+                        } catch (NumberParseException e) {
+                            e.printStackTrace();
+                        }
+                        final String number = phoneUtil.format(temp, PhoneNumberUtil.PhoneNumberFormat.INTERNATIONAL);
+
+                        Country tempCountry;
+                        tempCountry = daoCountry.selectByCountry(config.defaultCountry);
+                        final Country country = tempCountry;
+
+                        PhoneNumber phone = daoPhone.selectByNumber(number);
+                        if (phone != null) {
+                            if (phone.action==ADD_PREFIX) {
                                 //this.setResultData(config.dualBillingPrefix + number + (config.dualBillingAddSuffix ? "pp1": ""));
                                 String phoneNumber = config.dualBillingPrefix + number.replace("+", "00");
 
                                 phoneNumber += ",,1";
 
                                 Logger.info("Call " + phoneNumber);
-                                emitter.onNext(new ExecutionResult(ResultType.PROCEED, phoneNumber, config));
-                                return;
-                            case DO_NOTHING:
-                                emitter.onNext(new ExecutionResult(ResultType.PROCEED, phone.number));
-                                return;
-                        }
-                    } else {
-                        emitter.onNext(new ExecutionResult(ResultType.ASK, number, config, country));
-                        return;
-                    }
-                }
-            })
-                    .subscribeOn(Schedulers.io())
-                    .observeOn(AndroidSchedulers.mainThread())
-                    .subscribe((ExecutionResult result) -> {
-                        Logger.info("observe on " + Thread.currentThread().getName());
+                                return new ExecutionResult(ResultType.PROCEED, phoneNumber, config);
+                            }else {
+                                    return new ExecutionResult(ResultType.PROCEED, phone.number);
+                            }
 
-                        switch (result.result) {
-                            case SKIP:
-                                return;
-                            case PROCEED:
-                                Logger.info("Call " + result.phoneNumber);
-                                this.setResultData(result.phoneNumber);
-                                return;
-                            case ASK:
-                                displayWindow(context, result, contact);
-                                break;
-                            case ERROR:
-                                break;
+                        } else {
+                            return new ExecutionResult(ResultType.ASK, number, config, country);
                         }
-                    });
+                    }
+            });
+
+            switch (result.result) {
+                case SKIP:
+                    // do nothing
+                    return;
+                case PROCEED:
+                    Logger.info("Call " + result.phoneNumber);
+                    this.setResultData(result.phoneNumber);
+                    return;
+                case ASK:
+                    displayWindow(context, result, contact);
+                    break;
+                case ERROR:
+                    break;
+            }
 
 
         }
@@ -295,7 +283,7 @@ public class PhoneCallReceiver extends BroadcastReceiver {
         ((TextView) myView.findViewById(R.id.prefix_dialog_ask)).setText(context.getString(R.string.prefix_dialog_question, result.prefixConfig.dualBillingPrefix));
 
         myView.findViewById(R.id.prefix_dialog_prefix_add).setOnClickListener((View v) -> {
-            manageOnClick(context, ActionType.ADD_PREFIX, result, contact, windowManager, myView);
+            manageOnClick(context, ADD_PREFIX, result, contact, windowManager, myView);
             //windowManager.removeView(myView);
 
         });
