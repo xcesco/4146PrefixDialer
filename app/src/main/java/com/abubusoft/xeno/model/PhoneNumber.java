@@ -11,7 +11,7 @@ public class PhoneNumber {
 
     public ActionType action;
 
-    @BindSqlColumn(columnType = ColumnType.UNIQUE)
+    @BindSqlColumn(nullable = false, columnType = ColumnType.UNIQUE)
     public String number;
 
     public String countryCode;

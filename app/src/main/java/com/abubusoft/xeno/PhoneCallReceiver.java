@@ -25,6 +25,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 
+import com.abubusoft.kripton.android.KriptonLibrary;
 import com.abubusoft.kripton.android.Logger;
 import com.abubusoft.kripton.android.sqlite.TransactionResult;
 import com.abubusoft.kripton.common.One;
@@ -192,7 +193,7 @@ public class PhoneCallReceiver extends BroadcastReceiver {
                     this.setResultData(result.phoneNumber);
                     return;
                 case ASK:
-                    displayWindow(context, result, contact);
+                    displayWindow(KriptonLibrary.context(), result, contact);
                     break;
                 case ERROR:
                     break;
