@@ -34,24 +34,27 @@ public class ExampleInstrumentedTest {
         Context context = InstrumentationRegistry.getTargetContext();
 
         KriptonLibrary.init(context);
-       // assertEquals("abubusoft.com.xeno", appContext.getPackageName());
+        // assertEquals("abubusoft.com.xeno", appContext.getPackageName());
         InputStream schema1 = testContext.getAssets().open("xeno_schema_1.sql");
         InputStream schema2 = testContext.getAssets().open("xeno_schema_2.sql");
+        InputStream finalSchema = testContext.getAssets().open("xeno_schema_2.sql");
 
-       // String a=IOUtils.readText(schema1);
+        // String a=IOUtils.readText(schema1);
         //Logger.info(a);
 
         SQLiteSchemaVerifierHelper.clearDatabase(context);
         SQLiteUpdateTestDatabase database = SQLiteUpdateTestDatabase.builder(1, schema1)
                 .addVersionUpdateTask(2, (SQLiteDatabase datasource, int previousVersion, int currentVersion) -> {
-                        SQLiteUpdateTaskHelper.renameTablesWithPrefix(datasource, "tmp_");
+                    SQLiteUpdateTaskHelper.renameTablesWithPrefix(datasource, "tmp_");
 
-                        SQLiteUpdateTaskHelper.executeSQL(datasource, schema2);
-                        SQLiteUpdateTaskHelper.executeSQL(datasource, "INSERT INTO phone_number SELECT * FROM tmp_phone_number;");
+                    SQLiteUpdateTaskHelper.executeSQL(datasource, schema2);
+                    SQLiteUpdateTaskHelper.executeSQL(datasource, "INSERT INTO prefix_config SELECT * FROM tmp_prefix_config;");
+                    SQLiteUpdateTaskHelper.executeSQL(datasource, "INSERT INTO country SELECT * FROM tmp_country;");
+                    SQLiteUpdateTaskHelper.executeSQL(datasource, "INSERT INTO phone_number SELECT * FROM tmp_phone_number;");
 
-                        // SQLiteUpdateTaskHelper.dropTablesWithPrefix(datasource, "tmp_");
+                    SQLiteUpdateTaskHelper.dropTablesWithPrefix(datasource, "tmp_");
                 }).build();
 
-        database.updateAndVerify(2, schema2);
+        database.updateAndVerify(2, finalSchema);
     }
 }
