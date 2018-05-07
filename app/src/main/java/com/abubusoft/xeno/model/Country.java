@@ -6,7 +6,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 import com.abubusoft.kripton.android.ColumnType;
-import com.abubusoft.kripton.android.annotation.BindColumn;
+import com.abubusoft.kripton.android.annotation.BindSqlColumn;
 import com.abubusoft.kripton.android.annotation.BindTable;
 import com.abubusoft.kripton.annotation.Bind;
 import com.abubusoft.kripton.annotation.BindDisabled;
@@ -17,20 +17,20 @@ import com.abubusoft.kripton.annotation.BindType;
 @BindTable
 public class Country {
 
-    @BindColumn(columnType = ColumnType.PRIMARY_KEY)
+    @BindSqlColumn(columnType = ColumnType.PRIMARY_KEY)
 	public long id;
 
 	public long area;
 
-    @BindColumn(nullable = false, columnType = ColumnType.UNIQUE)
+    @BindSqlColumn(nullable = false, columnType = ColumnType.UNIQUE)
 	public String code;
 
-    @BindColumn(nullable = false)
+    @BindSqlColumn(nullable = false)
 	public String callingCode;
 
 	public String region;
 
-    @BindColumn(nullable = false)
+    @BindSqlColumn(nullable = false)
 	public String name;
 
 	public Map<Translation, String> translatedName = new LinkedHashMap<Translation, String>();

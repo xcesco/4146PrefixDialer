@@ -5,12 +5,12 @@ android {
         abortOnError false
     }
 
-    sourceSets {
-        androidTest {
-            //resources.srcDirs += ['../schemas']
-            resources.srcDirs += ['./src/androidTest/res']
-        }
-    }
+//    sourceSets {
+//        androidTest {
+//            //resources.srcDirs += ['../schemas']
+//            resources.srcDirs += ['src/androidTest/res']
+//        }
+//    }
 
 
     compileSdkVersion 27
@@ -19,8 +19,8 @@ android {
         applicationId "com.abubusoft.xeno"
         minSdkVersion 19
         targetSdkVersion 27
-        versionCode 107
-        versionName "1.0.7"
+        versionCode 108
+        versionName "1.0.8"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
 
@@ -72,7 +72,7 @@ android {
     }
 }
 
-def kriptonVersion = "4.0.0-rc.6"
+def kriptonVersion = "4.0.0-rc.7"
 def permissionDispatcherVersion = "3.1.0"
 def libPhoneNumberVersion = "8.3.0"
 def butterKnifeVersion = "8.8.1"

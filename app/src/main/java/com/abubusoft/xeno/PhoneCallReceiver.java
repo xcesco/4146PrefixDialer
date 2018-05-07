@@ -51,6 +51,7 @@ import org.greenrobot.eventbus.EventBus;
 
 import static android.content.Context.WINDOW_SERVICE;
 import static com.abubusoft.xeno.model.ActionType.ADD_PREFIX;
+import static com.abubusoft.xeno.model.ActionType.DO_NOTHING;
 
 public class PhoneCallReceiver extends BroadcastReceiver {
 
@@ -283,13 +284,13 @@ public class PhoneCallReceiver extends BroadcastReceiver {
         ((TextView) myView.findViewById(R.id.prefix_dialog_ask)).setText(context.getString(R.string.prefix_dialog_question, result.prefixConfig.dualBillingPrefix));
 
         myView.findViewById(R.id.prefix_dialog_prefix_add).setOnClickListener((View v) -> {
-            manageOnClick(context, ADD_PREFIX, result, contact, windowManager, myView);
+            manageOnClick(context, ADD_PREFIX, result, contact);
             //windowManager.removeView(myView);
 
         });
 
         myView.findViewById(R.id.prefix_dialog_prefix_none).setOnClickListener((View v) -> {
-            manageOnClick(context, ActionType.DO_NOTHING, result, contact, windowManager, myView);
+            manageOnClick(context, DO_NOTHING, result, contact);
 
         });
 
@@ -306,7 +307,7 @@ public class PhoneCallReceiver extends BroadcastReceiver {
         abortBroadcast();
     }
 
-    private void manageOnClick(final Context context, ActionType action, final ExecutionResult result, Pair<String, String> contact, WindowManager windowManager, View myView) {
+    private void manageOnClick(final Context context, ActionType action, final ExecutionResult result, Pair<String, String> contact) {
         final PhoneNumber phone = new PhoneNumber();
         BindXenoDataSource.instance().execute((BindXenoDaoFactory daoFactory) -> {
             Logger.info("subscribe " + Thread.currentThread().getName());
@@ -329,9 +330,11 @@ public class PhoneCallReceiver extends BroadcastReceiver {
         if (ActivityCompat.checkSelfPermission(context, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
-        //Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + config.dualBillingPrefix + number+ (config.dualBillingAddSuffix ? "pp1": "")));
-        //String phoneNumber = config.dualBillingPrefix + number.replace("+", "00")  /*+ (config.dualBillingAddSuffix ? ",1,2,3,4,5,6": "")*/;
-        String phoneNumberString = result.prefixConfig.dualBillingPrefix + result.phoneNumber.replace("+", "00");
+
+        String phoneNumberString=result.phoneNumber;
+        if (action==ActionType.ADD_PREFIX) {
+            phoneNumberString = result.prefixConfig.dualBillingPrefix + result.phoneNumber.replace("+", "00");
+        }
 
         Logger.info("Redirect to " + phone);
         Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + phoneNumberString));

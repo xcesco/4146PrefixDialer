@@ -1,5 +1,7 @@
 package com.abubusoft.xeno.model;
 
+import com.abubusoft.kripton.android.ColumnType;
+import com.abubusoft.kripton.android.annotation.BindSqlColumn;
 import com.abubusoft.kripton.annotation.BindType;
 
 @BindType
@@ -9,6 +11,7 @@ public class PhoneNumber {
 
     public ActionType action;
 
+    @BindSqlColumn(columnType = ColumnType.UNIQUE)
     public String number;
 
     public String countryCode;

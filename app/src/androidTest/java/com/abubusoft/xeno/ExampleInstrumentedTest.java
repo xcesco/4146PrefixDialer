@@ -7,15 +7,14 @@ import android.support.test.runner.AndroidJUnit4;
 
 import com.abubusoft.kripton.android.KriptonLibrary;
 import com.abubusoft.kripton.android.Logger;
-import com.abubusoft.kripton.android.commons.IOUtils;
+import com.abubusoft.kripton.android.sqlite.SQLiteSchemaVerifierHelper;
 import com.abubusoft.kripton.android.sqlite.SQLiteUpdateTask;
 import com.abubusoft.kripton.android.sqlite.SQLiteUpdateTaskHelper;
 import com.abubusoft.kripton.android.sqlite.SQLiteUpdateTestDatabase;
+import com.abubusoft.kripton.android.sqlite.SQLiteUpdateTestHelper;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
-import com.abubusoft.xeno.test.R;
 
 import java.io.InputStream;
 
@@ -36,25 +35,21 @@ public class ExampleInstrumentedTest {
 
         KriptonLibrary.init(context);
        // assertEquals("abubusoft.com.xeno", appContext.getPackageName());
-        InputStream schema1 = testContext
-                .getResources()
-                .openRawResource(R.raw.xeno_schema_1);
-
-        InputStream schema2 = testContext
-                .getResources()
-                .openRawResource(R.raw.xeno_schema_2);
+        InputStream schema1 = testContext.getAssets().open("xeno_schema_1.sql");
+        InputStream schema2 = testContext.getAssets().open("xeno_schema_2.sql");
 
        // String a=IOUtils.readText(schema1);
         //Logger.info(a);
 
-        SQLiteUpdateTestDatabase database = SQLiteUpdateTestDatabase.builder(1, context, schema1)
-                .addVersionUpdateTask(new SQLiteUpdateTask(2) {
-                    @Override
-                    public void execute(SQLiteDatabase database) {
-                        SQLiteUpdateTaskHelper.renameTablesWithPrefix(database, "tmp_");
-                        SQLiteUpdateTaskHelper.executeSQL(database, schema2);
-                        SQLiteUpdateTaskHelper.dropTablesWithPrefix(database, "tmp_");
-                    }
+        SQLiteSchemaVerifierHelper.clearDatabase(context);
+        SQLiteUpdateTestDatabase database = SQLiteUpdateTestDatabase.builder(1, schema1)
+                .addVersionUpdateTask(2, (SQLiteDatabase datasource, int previousVersion, int currentVersion) -> {
+                        SQLiteUpdateTaskHelper.renameTablesWithPrefix(datasource, "tmp_");
+
+                        SQLiteUpdateTaskHelper.executeSQL(datasource, schema2);
+                        SQLiteUpdateTaskHelper.executeSQL(datasource, "INSERT INTO phone_number SELECT * FROM tmp_phone_number;");
+
+                        // SQLiteUpdateTaskHelper.dropTablesWithPrefix(datasource, "tmp_");
                 }).build();
 
         database.updateAndVerify(2, schema2);
