@@ -55,6 +55,8 @@ public class ExampleInstrumentedTest {
                     SQLiteUpdateTaskHelper.dropTablesWithPrefix(datasource, "tmp_");
                 }).build();
 
+
+
         database.updateAndVerify(2, finalSchema);
     }
 }
