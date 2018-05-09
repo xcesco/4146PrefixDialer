@@ -7,11 +7,8 @@ import android.support.test.runner.AndroidJUnit4;
 
 import com.abubusoft.kripton.android.KriptonLibrary;
 import com.abubusoft.kripton.android.Logger;
-import com.abubusoft.kripton.android.sqlite.SQLiteSchemaVerifierHelper;
-import com.abubusoft.kripton.android.sqlite.SQLiteUpdateTask;
-import com.abubusoft.kripton.android.sqlite.SQLiteUpdateTaskHelper;
-import com.abubusoft.kripton.android.sqlite.SQLiteUpdateTestDatabase;
-import com.abubusoft.kripton.android.sqlite.SQLiteUpdateTestHelper;
+import com.abubusoft.kripton.android.sqlite.SQLiteTestDatabase;
+import com.abubusoft.kripton.android.sqlite.SQLiteTestUtils;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -41,15 +38,10 @@ public class DataSourceInstrumentedTest {
         InputStream finalSchema1 = testContext.getAssets().open("xeno_schema_1.sql");
         InputStream finalSchema2 = testContext.getAssets().open("xeno_schema_2.sql");
 
-        SQLiteSchemaVerifierHelper.clearDatabase(context);
-        SQLiteUpdateTestDatabase database = SQLiteUpdateTestDatabase.builder(1, schema1)
-                .addPopulator(datasource -> {
-                    Logger.info("execute populator");
-                    XenoApplication.fillCountryCodes(context);
-                })
-                .addVersionUpdateTask(2, (datasource, previousVersion, currentVersion) ->
-                        XenoApplication.migrationVersion2(context, datasource)
-                )
+        SQLiteTestDatabase.clearDatabase(context);
+        SQLiteTestDatabase database = SQLiteTestDatabase.builder(1, schema1)
+                .addPopulator(datasource -> XenoApplication.fillCountryCodes(context))
+                .addVersionUpdateTask(2, (datasource, previousVersion, currentVersion) -> XenoApplication.migrationVersion2(context, datasource))
                 .build();
 
         database.updateAndVerify(1, finalSchema1);
@@ -66,8 +58,8 @@ public class DataSourceInstrumentedTest {
         InputStream schema2 = testContext.getAssets().open("xeno_schema_2.sql");
         InputStream finalSchema2 = testContext.getAssets().open("xeno_schema_2.sql");
 
-        SQLiteSchemaVerifierHelper.clearDatabase(context);
-        SQLiteUpdateTestDatabase database = SQLiteUpdateTestDatabase.builder(2, schema2)
+        SQLiteTestDatabase.clearDatabase(context);
+        SQLiteTestDatabase database = SQLiteTestDatabase.builder(2, schema2)
                 .addPopulator(datasource -> {
                     Logger.info("execute populator");
                     XenoApplication.fillCountryCodes(context);

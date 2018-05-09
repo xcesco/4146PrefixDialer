@@ -1,9 +1,8 @@
 package com.abubusoft.xeno.model;
 
-import com.abubusoft.kripton.android.annotation.BindTable;
-import com.abubusoft.kripton.annotation.BindType;
+import com.abubusoft.kripton.android.annotation.BindSqlType;
 
-@BindTable
+@BindSqlType
 public class PrefixConfig {
 
     public long id;

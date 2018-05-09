@@ -7,14 +7,13 @@ import java.util.Map;
 
 import com.abubusoft.kripton.android.ColumnType;
 import com.abubusoft.kripton.android.annotation.BindSqlColumn;
-import com.abubusoft.kripton.android.annotation.BindTable;
-import com.abubusoft.kripton.annotation.Bind;
+import com.abubusoft.kripton.android.annotation.BindSqlType;
 import com.abubusoft.kripton.annotation.BindDisabled;
 import com.abubusoft.kripton.annotation.BindType;
 
 // needed to parse json
 @BindType
-@BindTable
+@BindSqlType
 public class Country {
 
     @BindSqlColumn(columnType = ColumnType.PRIMARY_KEY)

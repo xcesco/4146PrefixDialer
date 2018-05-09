@@ -5,12 +5,12 @@ android {
         abortOnError false
     }
 
-//    sourceSets {
-//        androidTest {
-//            //resources.srcDirs += ['../schemas']
-//            resources.srcDirs += ['src/androidTest/res']
-//        }
-//    }
+    sourceSets {
+        androidTest {
+            //resources.srcDirs += ['../schemas']
+            resources.srcDirs += ['src/androidTest/res']
+        }
+    }
 
 
     compileSdkVersion 27
@@ -26,7 +26,8 @@ android {
 
         javaCompileOptions {
             annotationProcessorOptions {
-                arguments = [eventBusIndex: "com.abubusoft.xeno.XenoEventBusIndex"]
+                arguments = ["eventBusIndex"         : "com.abubusoft.xeno.XenoEventBusIndex",
+                             "kripton.schemaLocation": "${projectDir}/schemas".toString()]
             }
         }
     }
@@ -65,14 +66,13 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-
     packagingOptions {
         exclude 'META-INF/NOTICE' // will not include NOTICE file
         exclude 'META-INF/LICENSE' // will not include LICENSE file
     }
 }
 
-def kriptonVersion = "4.0.0-rc.8"
+def kriptonVersion = "4.0.0-rc.13"
 def permissionDispatcherVersion = "3.1.0"
 def libPhoneNumberVersion = "8.3.0"
 def butterKnifeVersion = "8.8.1"
