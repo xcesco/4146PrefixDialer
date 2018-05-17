@@ -120,7 +120,7 @@ public class PhoneListFragment extends Fragment {
             @Override
             public void onSendSms(PhoneNumber phone) {
                 PrefixConfig config = BindXenoDataSource.open().getPrefixConfigDao().selectOne();
-                BindXenoDataSource.instance().close();
+                BindXenoDataSource.getInstance().close();
 
                 String number = (phone.action == ActionType.ADD_PREFIX ? config.dualBillingPrefix : "") + phone.number;
                 Logger.info("SMS to " + number);
@@ -197,7 +197,7 @@ public class PhoneListFragment extends Fragment {
 
     @Subscribe(threadMode = ThreadMode.BACKGROUND)
     public void onPhoneNumberDelete(final EventPhoneNumberDelete event) {
-        BindXenoDataSource.instance().executeBatch(daoFactory -> {
+        BindXenoDataSource.getInstance().executeBatch(daoFactory -> {
             daoFactory.getPhoneDao().deleteById(event.item.id);
             return null;
         });

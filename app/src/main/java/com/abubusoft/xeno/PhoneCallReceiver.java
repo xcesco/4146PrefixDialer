@@ -132,7 +132,7 @@ public class PhoneCallReceiver extends BroadcastReceiver {
             final One<String> currentNumber = new One<>(intent.getExtras().getString(Intent.EXTRA_PHONE_NUMBER));
             final Pair<String, String> contact = getContactName(context, currentNumber.value0);
 
-            ExecutionResult result = BindXenoDataSource.instance().executeBatch((BindXenoDaoFactory daoFactory) -> {
+            ExecutionResult result = BindXenoDataSource.getInstance().executeBatch((BindXenoDaoFactory daoFactory) -> {
                     final PhoneDaoImpl daoPhone = daoFactory.getPhoneDao();
                     PrefixConfigDaoImpl daoPrefix = daoFactory.getPrefixConfigDao();
                     CountryDaoImpl daoCountry = daoFactory.getCountryDao();
@@ -193,7 +193,7 @@ public class PhoneCallReceiver extends BroadcastReceiver {
                     this.setResultData(result.phoneNumber);
                     return;
                 case ASK:
-                    displayWindow(KriptonLibrary.context(), result, contact);
+                    displayWindow(KriptonLibrary.getContext(), result, contact);
                     break;
                 case ERROR:
                     break;
@@ -310,7 +310,7 @@ public class PhoneCallReceiver extends BroadcastReceiver {
 
     private void manageOnClick(final Context context, ActionType action, final ExecutionResult result, Pair<String, String> contact) {
         final PhoneNumber phone = new PhoneNumber();
-        BindXenoDataSource.instance().execute((BindXenoDaoFactory daoFactory) -> {
+        BindXenoDataSource.getInstance().execute((BindXenoDaoFactory daoFactory) -> {
             Logger.info("subscribe " + Thread.currentThread().getName());
 
 

@@ -72,7 +72,7 @@ android {
     }
 }
 
-def kriptonVersion = "4.0.0-rc.14"
+def kriptonVersion = "4.0.0-rc.18"
 def permissionDispatcherVersion = "3.1.0"
 def libPhoneNumberVersion = "8.3.0"
 def butterKnifeVersion = "8.8.1"

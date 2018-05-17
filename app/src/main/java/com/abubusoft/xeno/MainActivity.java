@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity
     @OnPermissionDenied({Manifest.permission. PROCESS_OUTGOING_CALLS, Manifest.permission.READ_CONTACTS,  Manifest.permission.SYSTEM_ALERT_WINDOW})
     public void onEventNoPermission() {
         Logger.info("onEventNoPermission");
-        BindXenoDataSource.instance().execute((BindXenoDaoFactory daoFactory) -> {
+        BindXenoDataSource.getInstance().execute((BindXenoDaoFactory daoFactory) -> {
                 PrefixConfig config = daoFactory.getPrefixConfigDao().selectOne();
                 config.enabled=false;
                 daoFactory.getPrefixConfigDao().update(config);

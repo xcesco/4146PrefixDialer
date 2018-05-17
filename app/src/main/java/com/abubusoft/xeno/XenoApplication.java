@@ -69,7 +69,7 @@ public class XenoApplication extends Application {
         PhoneNumberUtil util = PhoneNumberUtil.getInstance();
         Set<String> supportedCodes = util.getSupportedRegions();
 
-        BindXenoDataSource.instance().executeBatch(daoFactory -> {
+        BindXenoDataSource.getInstance().executeBatch(daoFactory -> {
             CountryDaoImpl dao = daoFactory.getCountryDao();
             List<Country> list = KriptonBinder.jsonBind().parseList(input, Country.class);
 

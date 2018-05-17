@@ -26,7 +26,7 @@ import static org.junit.Assert.*;
 public class DataSourceInstrumentedTest {
 
     @Test
-    public void testMigration() throws Exception {
+    public void testUpgrade() throws Exception {
         // Context of the app under test.
         Context testContext = InstrumentationRegistry.getContext();
         Context context = InstrumentationRegistry.getTargetContext();
@@ -49,7 +49,7 @@ public class DataSourceInstrumentedTest {
     }
 
     @Test
-    public void testVersion2() throws Exception {
+    public void testInstallVersion2() throws Exception {
         // Context of the app under test.
         Context testContext = InstrumentationRegistry.getContext();
         Context context = InstrumentationRegistry.getTargetContext();

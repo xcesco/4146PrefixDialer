@@ -22,4 +22,15 @@ It uses these fantastic libraries:
  - [Lib Phone Number](https://github.com/googlei18n/libphonenumber): to format phone numbers
  - [Event Bus](https://github.com/greenrobot/EventBus): to manage components comunications
 
+## How to copy locally the database ##
+To copy database from emulator to workstation just use:
 
+### Anything before API 24 ###
+```
+adb pull /data/data/com.abubusoft.xeno/databases/rss.db
+```
+
+### API 24 and later ###
+```
+adb exec-out run-as com.abubusoft.xeno cat ./databases/xeno.db > xeno.db
+```

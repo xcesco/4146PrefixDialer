@@ -113,7 +113,7 @@ public class ConfigFragment extends Fragment {
             }
         });*/
 
-        BindXenoDataSource.instance().executeBatch(daoFactory -> {
+        BindXenoDataSource.getInstance().executeBatch(daoFactory -> {
                 daoFactory.getPrefixConfigDao().update(config);
                 return true;
         });
