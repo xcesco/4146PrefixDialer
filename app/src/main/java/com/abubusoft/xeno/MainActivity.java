@@ -98,6 +98,10 @@ public class MainActivity extends AppCompatActivity
 
         mViewPager.setAdapter(mSectionsPagerAdapter);
         tabLayout.setupWithViewPager(mViewPager);
+
+        MainActivityPermissionsDispatcher.enablePermissionsWithPermissionCheck(this);
+        MainActivityPermissionsDispatcher.enableSystemAlertWindowWithPermissionCheck(this);
+        MainActivityPermissionsDispatcher.enableCallPhoneWithPermissionCheck(this);
     }
 
     @Override
@@ -110,9 +114,7 @@ public class MainActivity extends AppCompatActivity
     {
         Logger.info("onEventEnablePrefix");
 
-        MainActivityPermissionsDispatcher.enablePermissionsWithPermissionCheck(this);
 
-        MainActivityPermissionsDispatcher.enableSystemAlertWindowWithPermissionCheck(this);
     }
 
     @NeedsPermission(Manifest.permission.SYSTEM_ALERT_WINDOW)
@@ -121,16 +123,17 @@ public class MainActivity extends AppCompatActivity
         Logger.info("enableSystemAlertWindow");
     }
 
+    @NeedsPermission(Manifest.permission.CALL_PHONE)
+    public void enableCallPhone()
+    {
+        Logger.info("enableCallPhone");
+    }
 
     @NeedsPermission({Manifest.permission.PROCESS_OUTGOING_CALLS, Manifest.permission.READ_CONTACTS})
     public void enablePermissions()
     {
         Logger.info("enableProcessOutgoindCalls");
     }
-
-
-
-
 
 //    @OnShowRationale({Manifest.permission.PROCESS_OUTGOING_CALLS, Manifest.permission.READ_CONTACTS})
 //    public void showRationaleForCamera(final PermissionRequest request) {
